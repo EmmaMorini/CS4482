@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 169
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,7 +115,637 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b61ccba0c8686e4db6709fdb5e153f1
+      internalID: -1348660655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_1
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 576
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99afd0ce1722354a8b29cb880b6a330
+      internalID: 1322054675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_2
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 576
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84efdd4bd19d5874aa0a1e03fa27178f
+      internalID: 1353441136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_3
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 576
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415e25e5bc444f4449a0c5b6770bbbab
+      internalID: -1605472932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_4
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 576
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d933f12835c87854bb446259f8edd663
+      internalID: 1621287626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_5
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 576
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4806381b1848db44b55abab816a3bcc
+      internalID: 509054248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_6
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 576
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75bf40326f84cf14ebcb7cf3ab77103b
+      internalID: -1173474143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_7
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 576
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c1f56d0f801254aa9f62d165b6fa08
+      internalID: -792157240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099d7b09e1e94a747b211b6c65386838
+      internalID: -186204261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_9
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 384
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0248d86cc27c8e24aa93350ae6fb093b
+      internalID: -1863253168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_10
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 384
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7883421f3cfea2141b4002308702fb0c
+      internalID: -2140354931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_11
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 384
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cc2a52f37fdc649b3e77bb97058db1
+      internalID: -441938339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_12
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 384
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad240c3b52830b4898ac865fb36c76b
+      internalID: -2023736666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_13
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 384
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d1047fbcdad2643b113f44af452e46
+      internalID: 166344486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_14
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 384
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5688054ba74deb148ba2b010887ab35c
+      internalID: -1263413517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_15
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 384
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3f9619c457d0c44be3dd27ca0cbf4f
+      internalID: 70592018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65dfcb6d17d7e442931c2744c88c0f6
+      internalID: -2141606054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_17
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 192
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f890daee83c5048b403a50be4ab1d2
+      internalID: -1518453444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_18
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 192
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b0998c18cde8c499d54c28b21616e4
+      internalID: 1107888343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_19
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 192
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055d60d07e0b62a4eb72b3df14cda20f
+      internalID: -1931814928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_20
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 192
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 599feebc5550fb047b61214e67cbd675
+      internalID: -269784559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_21
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 192
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a102842ab21ce34b8ee023a479d752c
+      internalID: -869708687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_22
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 192
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ee22b9e483dd54683ffd9f3f6119d6
+      internalID: 152953355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_23
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 192
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d19d7aa33f2b547a54199b6cb22a8e
+      internalID: 660836991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e482db0082a9c9e4e9ada79dee8a69a4
+      internalID: -1327606250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_25
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470c4ceef1e154341910a7d451abc97d
+      internalID: -437687613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_26
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 0
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7222fc785af6a7a41809999ae9531473
+      internalID: -2050332667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_27
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 0
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e163b11fade3b4cb4ad287df9e8734
+      internalID: -1452392264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_28
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 0
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75307cfb6f61b5041a9e748fc32b8ac9
+      internalID: 1941393476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_29
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 0
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99459486444dc1c46bb4629dcef458e3
+      internalID: 1208319891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +756,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_26: -2050332667
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_3: -1605472932
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_4: 1621287626
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_5: 509054248
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_20: -269784559
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_7: -792157240
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_18: 1107888343
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_29: 1208319891
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_6: -1173474143
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_19: -1931814928
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_14: -1263413517
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_0: -1348660655
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_28: 1941393476
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_17: -1518453444
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_24: -1327606250
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_8: -186204261
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_9: -1863253168
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_1: 1322054675
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_23: 660836991
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_16: -2141606054
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_15: 70592018
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_21: -869708687
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_10: -2140354931
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_25: -437687613
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_27: -1452392264
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_22: 152953355
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_12: -2023736666
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_2: 1353441136
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_11: -441938339
+      portal-on grass-grass land-all animations(standby-opening-opened-closing)-290x192_13: 166344486
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

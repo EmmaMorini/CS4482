@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: AnimatedWaterStairs1
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -969087431, guid: 684948b51337caf4ebc527035ea0b202, type: 3}
+  - {fileID: -1604244047, guid: 684948b51337caf4ebc527035ea0b202, type: 3}
+  - {fileID: -1369210707, guid: 684948b51337caf4ebc527035ea0b202, type: 3}
+  - {fileID: -1902552040, guid: 684948b51337caf4ebc527035ea0b202, type: 3}
+  - {fileID: -513612833, guid: 684948b51337caf4ebc527035ea0b202, type: 3}
+  - {fileID: 435556776, guid: 684948b51337caf4ebc527035ea0b202, type: 3}
+  - {fileID: 1963119523, guid: 684948b51337caf4ebc527035ea0b202, type: 3}
+  - {fileID: -207512775, guid: 684948b51337caf4ebc527035ea0b202, type: 3}
+  - {fileID: -2005792813, guid: 684948b51337caf4ebc527035ea0b202, type: 3}
+  - {fileID: -1082834064, guid: 684948b51337caf4ebc527035ea0b202, type: 3}
+  - {fileID: -804697074, guid: 684948b51337caf4ebc527035ea0b202, type: 3}
+  - {fileID: -199262053, guid: 684948b51337caf4ebc527035ea0b202, type: 3}
+  - {fileID: 715552043, guid: 684948b51337caf4ebc527035ea0b202, type: 3}
+  - {fileID: 1345347812, guid: 684948b51337caf4ebc527035ea0b202, type: 3}
+  - {fileID: -1687661641, guid: 684948b51337caf4ebc527035ea0b202, type: 3}
+  m_MinSpeed: 10
+  m_MaxSpeed: 10
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
