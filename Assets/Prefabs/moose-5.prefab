@@ -257,13 +257,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f2500f42713d46889d019298f45146b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 5
   smokeEffect: {fileID: 0}
   changeTime: 3
-  maxDamage: 5
+  maxHealth: 5
   projectilePrefab: {fileID: 0}
-  attackPoints: {fileID: 0}
-  attackRange: 0
+  attackPoints: {fileID: 719286814}
+  attackRange: 0.5
   playerLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -281,9 +281,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxAttackTime: 3
   minAttackTime: 1
-  idleMin: 0
-  idleMax: 0
-  anim: {fileID: 0}
+  idleMin: 1
+  idleMax: 5
+  anim: {fileID: 7198437648308945504}
 --- !u!50 &7294179084366473380
 Rigidbody2D:
   serializedVersion: 4
@@ -343,11 +343,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd513a93be85e48478390e3dc220b30c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idleMin: 0
-  idleMax: 0
-  moveLengthMin: 0
-  moveLengthMax: 0
-  anim: {fileID: 0}
+  idleMin: 1
+  idleMax: 5
+  moveLengthMin: 1
+  moveLengthMax: 5
+  anim: {fileID: 7198437648308945504}
 --- !u!1 &8890311215142370804
 GameObject:
   m_ObjectHideFlags: 0
