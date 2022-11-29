@@ -1,0 +1,8 @@
+Ancient Ruins-wall-1-rule.tmx
+Ancient Ruins-wall-2-rule.tmx
+Ancient Ruins-wall-3-rule.tmx
+Ancient Ruins-wall-4-rule.tmx
+Ancient Ruins-wall-5-rule.tmx
+Ancient Ruins-wall-6-rule.tmx
+Ancient Ruins-wall-7-rule.tmx
+Ancient Ruins-wall-8-rule.tmx
