@@ -51,13 +51,11 @@ public class EnemyRandomMovement : MonoBehaviour
                     // Debug.Log("pos to: " + pos);
                     if (vertical)
                     {
-                        anim.SetFloat("X", 0);
-                        anim.SetFloat("Y", direction);
+                        anim.SetFloat("Look X", 0);
                     }
                     else
                     {
-                        anim.SetFloat("X", direction);
-                        anim.SetFloat("Y", 0);
+                        anim.SetFloat("Look X", direction);
                     }
                     moveTime += Time.deltaTime;
                     anim.SetFloat("Speed", speed);

@@ -13,8 +13,8 @@ public class EnemyController : MonoBehaviour
     bool isBoostDelay;
     float boostDelayTime = 2.0f;
     float boostDelay;
-    int damage;
-    public int maxDamage = 5;
+    int health;
+    public int maxHealth = 5;
     Animator animator;
     bool broken = true;
     int direction = 1;
@@ -35,8 +35,8 @@ public class EnemyController : MonoBehaviour
         randoMove = GetComponent<EnemyRandomMovement>();
         randoMelle = GetComponent<EnemyRandomMeleeAttack>();
         pos = transform.position;
-        damage = maxDamage;
-        animator.SetInteger("Health", maxDamage);
+        health = maxHealth;
+        animator.SetInteger("Health", maxHealth);
     }
 
     // Update is called once per frame
@@ -54,7 +54,7 @@ public class EnemyController : MonoBehaviour
     void FixedUpdate()
     {
         if (!broken) return;
-        // if (TryGetComponent(out RandomSpawn bulletSpawn)) bulletSpawn.Rando(direction, pos);
+        randoMelle.Rando(direction, pos);
         randoMove.Rando(speed, direction, pos);
     }
 
@@ -73,7 +73,7 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    public void ChangeDamage(int amt)
+    public void ChangeHealth(int amt)
     {
         if (amt < 0)
         {
@@ -82,14 +82,14 @@ public class EnemyController : MonoBehaviour
             isBoostDelay = true;
             boostDelay = boostDelayTime;
         }
-        damage = Mathf.Clamp(damage + amt, 0, maxDamage);
-        animator.SetInteger("Health", damage);
-        Debug.Log(damage + "/" + maxDamage);
+        health = Mathf.Clamp(health + amt, 0, maxHealth);
+        animator.SetInteger("Health", health);
+        Debug.Log(health + "/" + maxHealth);
     }
 
-    public int GetDamage()
+    public int GetHealth()
     {
-        return damage;
+        return health;
     }
 
     public void Fix()
@@ -100,11 +100,11 @@ public class EnemyController : MonoBehaviour
         if (smokeEffect) smokeEffect.Stop();
     }
 
-    public void OnHit(int damage, Vector2 direction)
+    public void OnHit(int health, Vector2 direction)
     {
         Debug.Log("got hit");
         rb.AddForce(direction, ForceMode2D.Force);
-        ChangeDamage(damage);
+        ChangeHealth(health);
     }
 
     public void Destroy()
@@ -145,7 +145,7 @@ public class EnemyController : MonoBehaviour
             EnemyController enemy = e.GetComponent<EnemyController>();
             if (enemy) {
                 Debug.Log("Enemy hit");
-                enemy.ChangeDamage(-1);
+                enemy.ChangeHealth(-1);
             }
             else Debug.Log("No enemy");
         }
