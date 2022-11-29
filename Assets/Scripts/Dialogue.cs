@@ -6,61 +6,25 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
-    public string[] lines;
-    public float textSpeed;
+    public float charactersPerSecond = 40;
 
     private int index;
     // Start is called before the first frame update
-    void Start()
-    {
-        textComponent.text = string.Empty;
-        StartDialogue();
-    }
 
-    // Update is called once per frame
-    void Update()
+    public void StartDialogue(string text)
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            if(textComponent.text == lines[index])
-            {
-                NextLine();
-            }
-            else
-            {
-                StopAllCoroutines();
-                textComponent.text = lines[index];
-            }
-        }
-    }
-
-    void StartDialogue()
-    {
+        StopAllCoroutines();
         index = 0;
-        StartCoroutine(TypeLine());
+        textComponent.text = string.Empty;
+        StartCoroutine(TypeLine(text));
     }
 
-    IEnumerator TypeLine()
+    IEnumerator TypeLine(string text)
     {
-        foreach(char c in lines[index].ToCharArray())
+        foreach(char c in text.ToCharArray())
         {
             textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);
+            yield return new WaitForSeconds(1/charactersPerSecond);
         }
     }
-
-    void NextLine()
-    {
-        if(index <lines.Length - 1)
-        {
-            index++;
-            textComponent.text = string.Empty;
-            StartCoroutine(TypeLine());
-
-        } else
-        {
-            gameObject.SetActive(false);
-        }
-    }
-
 }
