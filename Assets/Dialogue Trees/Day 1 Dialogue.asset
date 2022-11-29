@@ -10,21 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b975b3d3846c7ba4aa5c2e244949ee61, type: 3}
-  m_Name: Dialogue Tree
+  m_Name: Day 1 Dialogue
   m_EditorClassIdentifier: 
   nodeIds:
   - hey
   - how are you
+  - no thank you bye
   nodeList:
   - label: hey
     responses:
     - responseID: hey back
       nextNodeId: how are you
-    attachedAsset: {fileID: 0}
+    - responseID: how can I help you
+      nextNodeId: no thank you bye
+    nodeType: 0
   - label: how are you
     responses:
     - responseID: done
       nextNodeId: <END>
-    attachedAsset: {fileID: 0}
+    nodeType: 2
+  - label: no thank you bye
+    responses:
+    - responseID: end
+      nextNodeId: <END>
+    nodeType: 3
   entryPointId: hey
   textSource: {fileID: 11400000, guid: 57cc121055ba6994abc6ef45ddb1232c, type: 2}

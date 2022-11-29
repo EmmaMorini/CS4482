@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: adfb985037de4b040a6b450ab9d909cb, type: 3}
-  m_Name: TextDB
+  m_Name: Day 1 Strings
   m_EditorClassIdentifier: 
   languageKeys:
   - hey
   - hey back
   - how are you
   - done
+  - how can I help you
+  - no thank you bye
+  - end
   languageMaps:
   - languages: 000000000100000002000000
     translationList:
@@ -38,3 +41,18 @@ MonoBehaviour:
     - fin
     - fin
     - fin
+  - languages: 000000000100000002000000
+    translationList:
+    - how can i help you
+    - how can i help you in viet
+    - how can I help you in italian
+  - languages: 000000000100000002000000
+    translationList:
+    - I don't want anything bye
+    - I don't want anything bye in viet
+    - I don't want anything bye in italian
+  - languages: 000000000100000002000000
+    translationList:
+    - aite
+    - aite
+    - aite

@@ -4,12 +4,12 @@ using UnityEngine;
 using System.Linq;
 using System;
 using TMPro;
-using System.Linq;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
-    public TMPro.TMP_Text promptText;
+    public Dialogue promptText;
     public DialogueTraverser traverser;
     public GameObject fourResponseButtons;
     public GameObject threeResponseButtons;
@@ -34,7 +34,7 @@ public class DialogueManager : MonoBehaviour
 
     void UpdateUI(){
         
-        promptText.text = traverser.GetText(language);
+        promptText.StartDialogue(traverser.GetText(language));
         fourResponseButtons.SetActive(false);
         threeResponseButtons.SetActive(false);
         twoResponseOptions.SetActive(false);
@@ -65,8 +65,6 @@ public class DialogueManager : MonoBehaviour
                 filler = oneResponseOption.GetComponentInChildren<OptionFiller>();
                 break;
         }
-        // Debug.Log(filler);
-        // Debug.Log( filler.GetButtons().Count+" buttons "+traverser.GetOptions(language).Count +" options");
         if(filler != null){
             foreach(var (v, i) in filler.GetButtons().Zip(traverser.GetOptions(language), (x, y)=>(x, y)).Select((v, i)=>(v, i)))
             {
@@ -74,23 +72,16 @@ public class DialogueManager : MonoBehaviour
                 v.x.onClick.AddListener(() =>{
                     Debug.Log("Click option " + i);
                     traverser.SelectOption(i);
+
+                    if(traverser.InEndState()){
+                        Debug.Log("End state. Buff "+traverser.GetEndState());
+                        SceneManager.LoadScene(traverser.sceneOnFinish);
+                    }
                     UpdateUI();
                 });
                 Debug.Log("Set button text" + v.y);
                 v.x.GetComponentInChildren<TMP_Text>().text = v.y;
             }
         }
-        // foreach(Transform child in responseParent.transform)
-        // {
-        //     Destroy(child.gameObject);
-        // }
-
-        // foreach((string option, int index) in traverser.GetOptions(language).Select((k, i)=>(k, i)))
-        // {
-        //     GameObject newButton = Instantiate(responseInstance, new Vector3(250, 300 - index * 60, 0), responseInstance.transform.rotation, responseParent.transform);
-        //     newButton.GetComponent<Button>().onClick.AddListener(() => { traverser.SelectOption(index); UpdateUI();});
-        //     newButton.GetComponentInChildren<TMPro.TMP_Text>().text = option;
-
-        // }
     }
 }

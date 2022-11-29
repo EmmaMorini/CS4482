@@ -332,7 +332,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tree: {fileID: 11400000, guid: d8521f6bcf4db34408f7361de51ee55b, type: 2}
-  sceneOnFinish: Night1
 --- !u!114 &315069598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,7 +1032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1103762675}
   charactersPerSecond: 40
---- !u!1 &1838806229
+--- !u!1 &1813833773
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1041,8 +1040,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1838806231}
-  - component: {fileID: 1838806230}
+  - component: {fileID: 1813833775}
+  - component: {fileID: 1813833774}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: Untagged
@@ -1050,13 +1049,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &1838806230
+--- !u!82 &1813833774
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838806229}
+  m_GameObject: {fileID: 1813833773}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -1146,13 +1145,13 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!4 &1838806231
+--- !u!4 &1813833775
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838806229}
+  m_GameObject: {fileID: 1813833773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 749.7847, y: 156.83598, z: -0.6194974}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1173,7 +1172,7 @@ GameObject:
   - component: {fileID: 1919307269}
   - component: {fileID: 1919307268}
   m_Layer: 5
-  m_Name: Old Male
+  m_Name: Young Female
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1219,7 +1218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 245a3832f541314479722201796ff9ae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b87b955105fee74eae9d02b02dd434b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

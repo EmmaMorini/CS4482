@@ -12,7 +12,7 @@ public class DialogueNode
     public ResponseOption[] responses; // the possible responses for the node
 
     [SerializeReference]
-    public GameObject attachedAsset;
+    public NodeType.DialogueNodeType nodeType = NodeType.DialogueNodeType.None;
 
     public DialogueNode(){}
 }
