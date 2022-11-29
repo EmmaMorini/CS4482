@@ -159,27 +159,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moose5-death-347x192_2
-      rect:
-        serializedVersion: 2
-        x: 694
-        y: 0
-        width: 347
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f0efd745fb0445ebac314c2500e2a47
-      internalID: -1213143720
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: moose5-death-347x192_3
       rect:
         serializedVersion: 2
@@ -285,6 +264,27 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: moose5-death-347x192_2
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 0
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274eeb0c2f89941c2829dc880768f560
+      internalID: -807150110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: moose5-death-347x192_8
       rect:
         serializedVersion: 2
@@ -299,7 +299,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d70f48c0df5144beb9b1d33923c804ce
+      spriteID: e5c13e30480b64fd4959e065795c4436
       internalID: -1495038287
       vertices: []
       indices: 
@@ -320,7 +320,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d066f7d1f3654742b4e96f13597e174
+      spriteID: a77d276256c0949a48b864ea0a50d013
       internalID: 1333379597
       vertices: []
       indices: 
@@ -341,7 +341,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b73700d5ac7af494aaacaa6ba2711450
+      spriteID: 580e03167cb354159a3cd770997bfa83
       internalID: -2059807819
       vertices: []
       indices: 
@@ -362,7 +362,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a101dd0348ad4a7498ff2f7fac03f9a
+      spriteID: d59f2f9d444284a2a8ae966bd2ca3ee9
       internalID: 1903036909
       vertices: []
       indices: 
@@ -383,7 +383,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a8a417b368e8405f8811ef7667855e1
+      spriteID: e724b393f94d946619836a065de9de0d
       internalID: -682786414
       vertices: []
       indices: 
@@ -404,8 +404,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 274eeb0c2f89941c2829dc880768f560
-      internalID: -807150110
+      spriteID: 14c221dc36df7471d90ef5e4c7ae4a41
+      internalID: -1213143720
       vertices: []
       indices: 
       edges: []
@@ -425,7 +425,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4e7334a90dfc48dfbd1d992aff45121
+      spriteID: d89d1c2e0a8104cbb8a94de9637452c3
       internalID: -1258327898
       vertices: []
       indices: 
@@ -455,8 +455,8 @@ TextureImporter:
       moose5-death-347x192_3: -1315447844
       moose5-death-347x192_9: 1333379597
       moose5-death-347x192_4: 2025528688
-      moose5-death-347x192_2: -1213143720
-      moose5-death-347x192_13: -807150110
+      moose5-death-347x192_2: -807150110
+      moose5-death-347x192_13: -1213143720
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
