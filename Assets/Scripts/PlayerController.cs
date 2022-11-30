@@ -136,7 +136,7 @@ public class PlayerController : MonoBehaviour
         GameObject projectileObj = Instantiate(projectilePrefab, rb.position + xProjectile, Quaternion.identity);
         Projectiles projectile = projectileObj.GetComponent<Projectiles>();
         if (projectile){
-            projectile.Launch(false,lookDir, 300);
+            projectile.Launch(lookDir, 300, false);
         } 
         else Debug.Log("No projectile for this character");
         // animator.SetTrigger("Launch");

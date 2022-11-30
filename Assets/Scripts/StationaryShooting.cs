@@ -8,7 +8,6 @@ public class StationaryShooting : MonoBehaviour
     Rigidbody2D rb;
     float direction;
     EnemyRandomShooting randoShoot;
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -23,10 +22,10 @@ public class StationaryShooting : MonoBehaviour
 
     public void Launch()
     {
-        GameObject projectileObj = Instantiate(projectilePrefab, rb.position + Vector2.up * -0.7f, Quaternion.identity);
+        GameObject projectileObj = Instantiate(projectilePrefab, rb.position + Vector2.down * 0.5f, Quaternion.identity);
         Projectiles projectile = projectileObj.GetComponent<Projectiles>();
         if (projectile){
-            projectile.Launch(true,Vector2.down, 300);
+            projectile.Launch(Vector2.down, 300, true);
         }
         else Debug.Log("No projectile for this character");
         // animator.SetTrigger("Launch");

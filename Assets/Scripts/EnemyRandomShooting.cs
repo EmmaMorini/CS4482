@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyRandomShooting : MonoBehaviour
 {
-    
+
     bool needsNewBehaviour = true;
     bool currentlyShooting;
     bool currentlyIdling;
@@ -19,8 +19,8 @@ public class EnemyRandomShooting : MonoBehaviour
     string behaviour;
     bool vertical;
     public Animator anim;
-    // Start is called before the first frame update
-
+    float pauseTime;
+    float pausePeriod = 0.2f;
     public void Rando(int direction, Vector2 pos)
     {
         if (needsNewBehaviour)
@@ -37,21 +37,34 @@ public class EnemyRandomShooting : MonoBehaviour
                     shootTime = 0;
                     shootPeriod = Random.Range(minShootTime, maxShootTime);
                     currentlyShooting = true;
+                    pauseTime = pausePeriod;
                 }
                 if (shootTime < shootPeriod)
                 {
                     Debug.Log("Shooting time");
-                    if (anim){
+                    if (anim)
+                    {
                         anim.SetFloat("X", direction);
                         anim.SetFloat("Y", 0);
                         shootTime += Time.deltaTime;
                         anim.SetTrigger("Launch");
-                    } else {
+                    }
+                    else
+                    {
                         Debug.Log("Rando Shooting Go Else");
                         StationaryShooting station = gameObject.GetComponent<StationaryShooting>();
-                        if (station){
+                        if (station)
+                        {
                             Debug.Log("Station found");
-                            station.Launch();
+                            pauseTime -= Time.deltaTime;
+                            Debug.Log("station pause time: " + pauseTime);
+                            if (pauseTime <= 0)
+                            {
+                                Debug.Log("station no pause, shoot");
+                                station.Launch();
+                                pauseTime = pausePeriod;
+                            }
+                            else return;
                         }
                     }
                 }
