@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyRandomMeleeAttack : MonoBehaviour
+public class EnemyRandomShooting : MonoBehaviour
 {
+    
     bool needsNewBehaviour = true;
-    bool currentlyAttacking;
+    bool currentlyShooting;
     bool currentlyIdling;
-    public float maxAttackTime;
-    public float minAttackTime;
+    public float maxShootTime;
+    public float minShootTime;
     float shootTime;
     float shootPeriod;
     float idleTime;
@@ -19,16 +20,6 @@ public class EnemyRandomMeleeAttack : MonoBehaviour
     bool vertical;
     public Animator anim;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void Rando(int direction, Vector2 pos)
     {
@@ -37,27 +28,36 @@ public class EnemyRandomMeleeAttack : MonoBehaviour
             behaviour = ChooseBehaviour();
             needsNewBehaviour = false;
         }
+        // Debug.Log(behaviour);
         switch (behaviour)
         {
             case "shoot":
-                if (!currentlyAttacking)
+                if (!currentlyShooting)
                 {
                     shootTime = 0;
-                    shootPeriod = Random.Range(minAttackTime, maxAttackTime);
-                    currentlyAttacking = true;
+                    shootPeriod = Random.Range(minShootTime, maxShootTime);
+                    currentlyShooting = true;
                 }
                 if (shootTime < shootPeriod)
                 {
-                    // Debug.Log("Melee active");
-                    if (anim){                        
-                        anim.SetFloat("Look X", direction);
+                    Debug.Log("Shooting time");
+                    if (anim){
+                        anim.SetFloat("X", direction);
+                        anim.SetFloat("Y", 0);
                         shootTime += Time.deltaTime;
-                        anim.SetTrigger("Attack");
+                        anim.SetTrigger("Launch");
+                    } else {
+                        Debug.Log("Rando Shooting Go Else");
+                        StationaryShooting station = gameObject.GetComponent<StationaryShooting>();
+                        if (station){
+                            Debug.Log("Station found");
+                            station.Launch();
+                        }
                     }
                 }
                 else
                 {
-                    currentlyAttacking = false;
+                    currentlyShooting = false;
                     needsNewBehaviour = true;
                 }
                 break;
@@ -73,7 +73,7 @@ public class EnemyRandomMeleeAttack : MonoBehaviour
 
                 if (idleTime < idleLength)
                 {
-                    // Debug.Log("Melee deactive");
+                    Debug.Log("Idle time");
                     idleTime += Time.deltaTime;
 
                 }
@@ -85,7 +85,7 @@ public class EnemyRandomMeleeAttack : MonoBehaviour
                 break;
 
             default:
-                // Debug.Log("default case here");
+                Debug.Log("default case here");
                 break;
         }
     }
