@@ -12,6 +12,7 @@ public class Projectiles : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         cld = GetComponent<Collider2D>();
+        // Debug.Log(rb);
         // anim = GetComponent<Animator> ();
     }
 
@@ -46,21 +47,18 @@ public class Projectiles : MonoBehaviour
         {
             if (anim) anim.SetTrigger("Hit");
             Debug.Log("Hit on");
+            rb.velocity = Vector2.zero;
             EnemyController e = other.gameObject.transform.parent.GetComponent<EnemyController>();
             PlayerController p = other.gameObject.transform.parent.GetComponent<PlayerController>();
             if (e)
             {
                 Debug.Log("hit the enemy hitbox, parent = " + e);
-                // if (e.GetHealth() == 0) e.Die();
-                // else 
                 e.ChangeHealth(-1);
                 if (!anim) Destroy(gameObject);
             }
             else if (p)
             {
                 Debug.Log("hit the player hitbox, parent = " + p);
-                // if (p.GetHealth() == 0) p.Respawn();
-                // else 
                 p.ChangeHealth(-1);
                 if (!anim) Destroy(gameObject);
             }
@@ -69,11 +67,11 @@ public class Projectiles : MonoBehaviour
 
         IEnumerator SelfDestruct()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(5f);
         Destroy(gameObject);
     }
 
-    public void Launch(bool vertical, Vector2 direction, float force)
+    public void Launch(Vector2 direction, float force, bool vertical)
     {
         if (anim){
             if (direction.x > 0) anim.SetFloat("Look X", 1);
@@ -81,9 +79,8 @@ public class Projectiles : MonoBehaviour
             anim.SetTrigger("Shoot");
             Debug.Log("Shoot on");            
         }
-        if (vertical) {
+        if (vertical){
             rb.AddForce(Vector2.up * direction.y * force);
-            Debug.Log("Stationary shot");
         }
         else rb.AddForce(Vector2.right * direction.x * force);
     }

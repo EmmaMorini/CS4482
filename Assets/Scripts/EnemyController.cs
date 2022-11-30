@@ -164,7 +164,7 @@ public class EnemyController : MonoBehaviour
         if (projectile){
             Vector2 lookDir = new Vector2(1, 0);
             lookDir.x = lookDir.x * direction;
-            projectile.Launch(false,lookDir, 300);
+            projectile.Launch(lookDir, 300, false);
         }
         else Debug.Log("No projectile for this character");
         // animator.SetTrigger("Launch");
