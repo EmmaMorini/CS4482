@@ -6,18 +6,10 @@ public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
     float speed = 5.0f;
-<<<<<<< HEAD
     float maxHealth = 5;
     public float damageDelayTime = 2.0f;
     public float collisionOffset = 0.5f;
     float currentHealth;
-=======
-    public int maxHealth = 5;
-    public float damageDelayTime = 2.0f;
-    public float collisionOffset = 0.5f;
-    int currentHealth;
-    public int health { get { return currentHealth; } }
->>>>>>> emma-map-creation
     Rigidbody2D rb;
     float horizontal;
     float vertical;
@@ -55,14 +47,9 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         cld = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
-<<<<<<< HEAD
         maxHealth = PlayerStats.MaxHealth;
         speed = PlayerStats.MoveSpeed;
         currentHealth = maxHealth;
-=======
-        currentHealth = maxHealth;
-        animator.SetInteger("Health", maxHealth);
->>>>>>> emma-map-creation
         respawn = transform.position;
         _lastxpos = transform.position.x;
     }
@@ -120,11 +107,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-<<<<<<< HEAD
     public float GetHealth(){
-=======
-    public int GetHealth(){
->>>>>>> emma-map-creation
         return currentHealth;
     }
 
@@ -139,10 +122,6 @@ public class PlayerController : MonoBehaviour
         }
         currentHealth = Mathf.Clamp(currentHealth + amt, 0, maxHealth);
         if (currentHealth == 0) Die();
-<<<<<<< HEAD
-=======
-        else animator.SetInteger("Health", currentHealth);
->>>>>>> emma-map-creation
         Debug.Log(currentHealth + "/" + maxHealth);
         // HealthBar.instance.SetHealth((float)currentHealth / (float)maxHealth);
     }
@@ -179,11 +158,7 @@ public class PlayerController : MonoBehaviour
             EnemyController enemy = e.GetComponent<EnemyController>();
             if (enemy) {
                 Debug.Log("Enemy hit");
-<<<<<<< HEAD
                 enemy.ChangeHealth(PlayerStats.Damage);
-=======
-                enemy.ChangeHealth(-1);
->>>>>>> emma-map-creation
             }
             else Debug.Log("No enemy");
         }
@@ -200,15 +175,8 @@ public class PlayerController : MonoBehaviour
 
     public void Die()
     {
-<<<<<<< HEAD
         animator.SetTrigger("Die");
         transform.position = respawn;
         currentHealth = maxHealth;
-=======
-        animator.SetInteger("Health", 0);
-        transform.position = respawn;
-        currentHealth = maxHealth;
-        // HealthBar.instance.SetHealth(1);
->>>>>>> emma-map-creation
     }
 }
