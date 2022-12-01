@@ -49,6 +49,11 @@ public class EnemyController : MonoBehaviour
             direction = -direction;
             timer = changeTime;
         }
+        if (isBoostDelay)
+        {
+            boostDelay -= Time.deltaTime;
+            if (boostDelay < 0) isBoostDelay = false;
+        }
         ChangePos();
     }
     void FixedUpdate()
@@ -60,30 +65,32 @@ public class EnemyController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        // RubyController player = other.gameObject.GetComponent<RubyController>();
-        // if (player != null)
-        // {
-        //     Debug.Log("Collision");
-        //     player.ChangeHealth(-1);
-        // }
-
-        if (other.gameObject.CompareTag("Map"))
+        PlayerController player = other.gameObject.GetComponent<PlayerController>();
+        if (player != null)
         {
-            randoMove.Rando(speed, direction, pos);
+            Debug.Log("Collision");
+            player.ChangeHealth(-1);
         }
+
+        // if (other.gameObject.CompareTag("Map"))
+        // {
+        // randoMove.Rando(speed, direction, pos);
+        // }
     }
 
     public void ChangeHealth(int amt)
     {
         if (amt < 0)
         {
-            animator.SetTrigger("Hit");
+            Debug.Log("health lost: "+amt);
+            animator.SetTrigger("GotHit");
             if (isBoostDelay) return;
             isBoostDelay = true;
             boostDelay = boostDelayTime;
         }
         health = Mathf.Clamp(health + amt, 0, maxHealth);
-        animator.SetInteger("Health", health);
+        if (health == 0) Die();
+        else animator.SetInteger("Health", health);
         Debug.Log(health + "/" + maxHealth);
     }
 
@@ -92,12 +99,12 @@ public class EnemyController : MonoBehaviour
         return health;
     }
 
-    public void Fix()
+    public void Die()
     {
         broken = false;
         rb.simulated = false;
-        animator.SetBool("broken", false);
         if (smokeEffect) smokeEffect.Stop();
+        animator.SetInteger("Health", 0);
     }
 
     public void OnHit(int health, Vector2 direction)
@@ -131,7 +138,6 @@ public class EnemyController : MonoBehaviour
         Vector2 lookDir = new Vector2(1, 0);
         lookDir.x = lookDir.x * direction;
         Vector2 transition = attackPoints.localPosition;
-        Debug.Log("attackpoint: " + attackPoints.localPosition);
         if ((lookDir.x > 0 && attackPoints.localPosition.x < 0) || (lookDir.x < 0 && attackPoints.localPosition.x > 0))
         {
             Debug.Log("change attackpoint");
@@ -142,13 +148,26 @@ public class EnemyController : MonoBehaviour
         foreach (Collider2D e in hitEnemies)
         {
             Debug.Log(e);
-            EnemyController enemy = e.GetComponent<EnemyController>();
-            if (enemy) {
+            PlayerController player = e.GetComponent<PlayerController>();
+            if (player) {
                 Debug.Log("Enemy hit");
-                enemy.ChangeHealth(-1);
+                player.ChangeHealth(-1);
             }
             else Debug.Log("No enemy");
         }
+    }
+
+    void Launch()
+    {
+        GameObject projectileObj = Instantiate(projectilePrefab, rb.position + Vector2.up * 0.5f, Quaternion.identity);
+        Projectiles projectile = projectileObj.GetComponent<Projectiles>();
+        if (projectile){
+            Vector2 lookDir = new Vector2(1, 0);
+            lookDir.x = lookDir.x * direction;
+            projectile.Launch(lookDir, 300, false);
+        }
+        else Debug.Log("No projectile for this character");
+        // animator.SetTrigger("Launch");
     }
 
     void OnDrawGizmosSelected()

@@ -75,6 +75,17 @@ public class DialogueManager : MonoBehaviour
 
                     if(traverser.InEndState()){
                         Debug.Log("End state. Buff "+traverser.GetEndState());
+                        switch(traverser.GetEndState()) {
+                            case NodeType.DialogueNodeType.BuffHealth:
+                            PlayerStats.Buffs.MaxHealth *= 1.10f;
+                            break;
+                            case NodeType.DialogueNodeType.BuffDamage:
+                            PlayerStats.Buffs.Damage *= 1.10f;
+                            break;
+                            case NodeType.DialogueNodeType.BuffSpeed:
+                            PlayerStats.Buffs.MoveSpeed *= 1.10f;
+                            break;
+                        }
                         SceneManager.LoadScene(traverser.sceneOnFinish);
                     }
                     UpdateUI();

@@ -48,10 +48,12 @@ public class EnemyRandomMeleeAttack : MonoBehaviour
                 }
                 if (shootTime < shootPeriod)
                 {
-                    Debug.Log("Melee active");
-                    anim.SetFloat("Look X", direction);
-                    shootTime += Time.deltaTime;
-                    anim.SetTrigger("Attack");
+                    // Debug.Log("Melee active");
+                    if (anim){                        
+                        anim.SetFloat("Look X", direction);
+                        shootTime += Time.deltaTime;
+                        anim.SetTrigger("Attack");
+                    }
                 }
                 else
                 {
@@ -71,7 +73,7 @@ public class EnemyRandomMeleeAttack : MonoBehaviour
 
                 if (idleTime < idleLength)
                 {
-                    Debug.Log("Melee deactive");
+                    // Debug.Log("Melee deactive");
                     idleTime += Time.deltaTime;
 
                 }
@@ -83,7 +85,7 @@ public class EnemyRandomMeleeAttack : MonoBehaviour
                 break;
 
             default:
-                Debug.Log("default case here");
+                // Debug.Log("default case here");
                 break;
         }
     }
