@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6724706364259513135}
   - component: {fileID: 4591902834749335639}
   - component: {fileID: 6262681471528088615}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Hitbox
   m_TagString: Hitbox
   m_Icon: {fileID: 0}
@@ -314,6 +314,8 @@ MonoBehaviour:
   maxHealth: 5
   damageDelayTime: 2
   collisionOffset: 0.5
+  projectilePrefab1: {fileID: 0}
+  projectilePrefab2: {fileID: 0}
   projectilePrefab: {fileID: 4503646915874374920, guid: 2714e36f4a5124bfdbdcecff317728fa, type: 3}
   attackPoints: {fileID: 5256306918613010814}
   attackRange: 0.5

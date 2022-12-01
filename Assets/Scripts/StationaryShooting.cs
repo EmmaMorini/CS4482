@@ -20,14 +20,16 @@ public class StationaryShooting : MonoBehaviour
         randoShoot.Rando(-1,Vector2.down);
     }
 
-    public void Launch()
+    public void Launch(bool active)
     {
-        GameObject projectileObj = Instantiate(projectilePrefab, rb.position + Vector2.down * 0.5f, Quaternion.identity);
-        Projectiles projectile = projectileObj.GetComponent<Projectiles>();
-        if (projectile){
-            projectile.Launch(Vector2.down, 300, true);
+        if (active){            
+            GameObject projectileObj = Instantiate(projectilePrefab, rb.position + Vector2.down * 0.5f, Quaternion.identity);
+            Projectiles projectile = projectileObj.GetComponent<Projectiles>();
+            if (projectile){
+                projectile.Launch(Vector2.down, 300, true);
+            }
+            else Debug.Log("No projectile for this character");
         }
-        else Debug.Log("No projectile for this character");
-        // animator.SetTrigger("Launch");
+        else return;
     }
 }
