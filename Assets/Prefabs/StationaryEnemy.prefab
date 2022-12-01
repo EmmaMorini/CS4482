@@ -13,9 +13,15 @@ GameObject:
   - component: {fileID: 6692312836338034767}
   - component: {fileID: 2134492682747891876}
   - component: {fileID: 1761177984506666642}
+<<<<<<< HEAD
   m_Layer: 8
   m_Name: StationaryEnemy
   m_TagString: Enemy
+=======
+  m_Layer: 0
+  m_Name: StationaryEnemy
+  m_TagString: Untagged
+>>>>>>> emma-map-creation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,8 +139,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41b75d13b1e84492a82001a82ee7ccef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   maxShootTime: 3
   minShootTime: 1
+=======
+  maxShootTime: 6
+  minShootTime: 2
+>>>>>>> emma-map-creation
   idleMin: 2
   idleMax: 5
   anim: {fileID: 0}

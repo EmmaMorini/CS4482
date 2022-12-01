@@ -46,15 +46,24 @@ public class EnemyRandomShooting : MonoBehaviour
                     {
                         anim.SetFloat("X", direction);
                         anim.SetFloat("Y", 0);
+<<<<<<< HEAD
+=======
+                        shootTime += Time.deltaTime;
+>>>>>>> emma-map-creation
                         anim.SetTrigger("Launch");
                     }
                     else
                     {
+<<<<<<< HEAD
+=======
+                        Debug.Log("Rando Shooting Go Else");
+>>>>>>> emma-map-creation
                         StationaryShooting station = gameObject.GetComponent<StationaryShooting>();
                         if (station)
                         {
                             Debug.Log("Station found");
                             pauseTime -= Time.deltaTime;
+<<<<<<< HEAD
                             if (pauseTime <= 0)
                             {
                                 station.Launch(true);
@@ -71,6 +80,21 @@ public class EnemyRandomShooting : MonoBehaviour
                 else
                 {
                     Debug.Log("Should stop bc times up");
+=======
+                            Debug.Log("station pause time: " + pauseTime);
+                            if (pauseTime <= 0)
+                            {
+                                Debug.Log("station no pause, shoot");
+                                station.Launch();
+                                pauseTime = pausePeriod;
+                            }
+                            else return;
+                        }
+                    }
+                }
+                else
+                {
+>>>>>>> emma-map-creation
                     currentlyShooting = false;
                     needsNewBehaviour = true;
                 }
