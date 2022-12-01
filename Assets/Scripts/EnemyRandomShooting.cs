@@ -46,30 +46,31 @@ public class EnemyRandomShooting : MonoBehaviour
                     {
                         anim.SetFloat("X", direction);
                         anim.SetFloat("Y", 0);
-                        shootTime += Time.deltaTime;
                         anim.SetTrigger("Launch");
                     }
                     else
                     {
-                        Debug.Log("Rando Shooting Go Else");
                         StationaryShooting station = gameObject.GetComponent<StationaryShooting>();
                         if (station)
                         {
                             Debug.Log("Station found");
                             pauseTime -= Time.deltaTime;
-                            Debug.Log("station pause time: " + pauseTime);
                             if (pauseTime <= 0)
                             {
-                                Debug.Log("station no pause, shoot");
-                                station.Launch();
+                                station.Launch(true);
                                 pauseTime = pausePeriod;
                             }
-                            else return;
+                            else
+                            {
+                                station.Launch(false);
+                            }
                         }
                     }
+                    shootTime += Time.deltaTime;
                 }
                 else
                 {
+                    Debug.Log("Should stop bc times up");
                     currentlyShooting = false;
                     needsNewBehaviour = true;
                 }

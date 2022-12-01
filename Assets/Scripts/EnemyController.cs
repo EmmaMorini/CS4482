@@ -13,8 +13,8 @@ public class EnemyController : MonoBehaviour
     bool isBoostDelay;
     float boostDelayTime = 2.0f;
     float boostDelay;
-    int health;
-    public int maxHealth = 5;
+    float health;
+    public float maxHealth = 5;
     Animator animator;
     bool broken = true;
     int direction = 1;
@@ -36,7 +36,6 @@ public class EnemyController : MonoBehaviour
         randoMelle = GetComponent<EnemyRandomMeleeAttack>();
         pos = transform.position;
         health = maxHealth;
-        animator.SetInteger("Health", maxHealth);
     }
 
     // Update is called once per frame
@@ -78,7 +77,7 @@ public class EnemyController : MonoBehaviour
         // }
     }
 
-    public void ChangeHealth(int amt)
+    public void ChangeHealth(float amt)
     {
         if (amt < 0)
         {
@@ -90,11 +89,10 @@ public class EnemyController : MonoBehaviour
         }
         health = Mathf.Clamp(health + amt, 0, maxHealth);
         if (health == 0) Die();
-        else animator.SetInteger("Health", health);
         Debug.Log(health + "/" + maxHealth);
     }
 
-    public int GetHealth()
+    public float GetHealth()
     {
         return health;
     }
@@ -104,7 +102,7 @@ public class EnemyController : MonoBehaviour
         broken = false;
         rb.simulated = false;
         if (smokeEffect) smokeEffect.Stop();
-        animator.SetInteger("Health", 0);
+        animator.SetTrigger("Die");
     }
 
     public void OnHit(int health, Vector2 direction)
