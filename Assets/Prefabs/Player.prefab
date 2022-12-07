@@ -311,10 +311,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a9751c07cb9d492582e2d0dadc8b173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
   damageDelayTime: 2
   collisionOffset: 0.5
-  projectilePrefab1: {fileID: 0}
+  projectilePrefab1: {fileID: 7800838088636303357, guid: 28088260f76134f7e9cdbc0e77f03e84, type: 3}
   projectilePrefab2: {fileID: 0}
   projectilePrefab: {fileID: 4503646915874374920, guid: 2714e36f4a5124bfdbdcecff317728fa, type: 3}
   attackPoints: {fileID: 5256306918613010814}
