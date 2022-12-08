@@ -62,6 +62,16 @@ public class PlayerController : MonoBehaviour
         // projectile2 = projectilePrefab2.GetComponent<Projectiles>();
     }
 
+    private void OnEnable()
+    {
+        ChaliceCollectible.OnChaliceCollected += AddHealth;
+    }
+
+    private void OnDisable()
+    {
+        ChaliceCollectible.OnChaliceCollected -= AddHealth;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -236,5 +246,11 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("Die");
         transform.position = respawn;
         currentHealth = maxHealth;
+    }
+
+    public void AddHealth()
+    {
+        currentHealth = maxHealth;
+        Debug.Log("Cureent health restored to max:" + currentHealth);
     }
 }
