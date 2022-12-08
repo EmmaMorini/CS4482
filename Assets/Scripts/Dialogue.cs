@@ -7,6 +7,7 @@ public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public float charactersPerSecond = 40;
+    public AudioSource talkSound;
 
     private int index;
     // Start is called before the first frame update
@@ -24,6 +25,9 @@ public class Dialogue : MonoBehaviour
         foreach(char c in text.ToCharArray())
         {
             textComponent.text += c;
+            if(char.IsLetter(c)){
+                talkSound.PlayOneShot(talkSound.clip);
+            }
             yield return new WaitForSeconds(1/charactersPerSecond);
         }
     }
