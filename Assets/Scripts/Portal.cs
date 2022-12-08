@@ -25,7 +25,7 @@ public class Portal : MonoBehaviour
         }
         if (isDone)
         {
-            SceneManager.LoadScene("Day2");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
