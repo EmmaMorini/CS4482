@@ -21,8 +21,8 @@ TagManager:
   - Player
   - PlayerHitbox
   - EnemyProjectile
-  - 
-  - 
+  - Map
+  - Confiner
   - 
   - 
   - 
