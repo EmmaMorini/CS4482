@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 969087857486693575}
   - component: {fileID: -4246269035800363897}
   - component: {fileID: -9056329420677600947}
+  - component: {fileID: 3072011364444010288}
   m_Layer: 0
   m_Name: shooting-tower
   m_TagString: Untagged
@@ -138,3 +139,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &3072011364444010288
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969087857486693574}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.024139404, y: -0.3500557}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.82, y: 2.24}
+    newSize: {x: 1.82, y: 2.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9991913, y: 1.1053429}
+  m_EdgeRadius: 0
