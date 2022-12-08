@@ -27,6 +27,7 @@ public class EnemyRandomShooting : MonoBehaviour
         {
             behaviour = ChooseBehaviour();
             needsNewBehaviour = false;
+            Debug.Log("Hello does it goes here?");
         }
         // Debug.Log(behaviour);
         switch (behaviour)
@@ -41,11 +42,12 @@ public class EnemyRandomShooting : MonoBehaviour
                 }
                 if (shootTime < shootPeriod)
                 {
-                    Debug.Log("Shooting time");
+                    // Debug.Log("Shooting time");
                     if (anim)
                     {
-                        anim.SetFloat("X", direction);
-                        anim.SetFloat("Y", 0);
+                        Debug.Log(anim);
+                        anim.SetFloat("Look X", direction);
+                        // anim.SetFloat("Y", 0);
                         anim.SetTrigger("Launch");
                     }
                     else
@@ -53,7 +55,6 @@ public class EnemyRandomShooting : MonoBehaviour
                         StationaryShooting station = gameObject.GetComponent<StationaryShooting>();
                         if (station)
                         {
-                            Debug.Log("Station found");
                             pauseTime -= Time.deltaTime;
                             if (pauseTime <= 0)
                             {
@@ -70,7 +71,6 @@ public class EnemyRandomShooting : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Should stop bc times up");
                     currentlyShooting = false;
                     needsNewBehaviour = true;
                 }
@@ -87,7 +87,6 @@ public class EnemyRandomShooting : MonoBehaviour
 
                 if (idleTime < idleLength)
                 {
-                    Debug.Log("Idle time");
                     idleTime += Time.deltaTime;
 
                 }

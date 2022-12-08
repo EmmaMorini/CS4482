@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     public float attackRange;
     public LayerMask enemyLayers;
     float _lastxpos;
-    int limitProjectiles = 3;
+    // int limitProjectiles = 3;
     int shootingcase = -1;
     Projectiles projectile1;
     Projectiles projectile2;
