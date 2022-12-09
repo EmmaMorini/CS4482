@@ -5,13 +5,11 @@ using System;
 
 public class ShieldCollectible : MonoBehaviour, ICollectible
 {
-    public static event HandleShieldCollected OnShieldCollected;
-    public delegate void HandleShieldCollected(ItemData itemData);
-    public ItemData shieldData;
+    public static event Action OnShieldCollected;
     public void Collect()
     {
         Debug.Log("Chalice collected");
         Destroy(gameObject);
-        OnShieldCollected?.Invoke(shieldData);
+        OnShieldCollected?.Invoke();
     }
 }
