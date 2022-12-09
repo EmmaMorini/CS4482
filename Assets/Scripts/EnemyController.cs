@@ -21,6 +21,7 @@ public class EnemyController : MonoBehaviour//, ICollectible
     Vector2 pos;
     EnemyRandomMovement randoMove;
     EnemyRandomMeleeAttack randoMelle;
+    EnemyRandomShooting randoShooting;
     Collider2D cld;
     public GameObject projectilePrefab;
     public Transform attackPoints;
@@ -37,6 +38,7 @@ public class EnemyController : MonoBehaviour//, ICollectible
         animator = GetComponent<Animator>();
         randoMove = GetComponent<EnemyRandomMovement>();
         randoMelle = GetComponent<EnemyRandomMeleeAttack>();
+        randoShooting = GetComponent<EnemyRandomShooting>();
         pos = transform.position;
         health = maxHealth;
     }
@@ -61,7 +63,8 @@ public class EnemyController : MonoBehaviour//, ICollectible
     void FixedUpdate()
     {
         if (!broken) return;
-        randoMelle.Rando(direction, pos);
+        if (randoMelle) randoMelle.Rando(direction, pos);
+        if (randoShooting) randoShooting.Rando(direction, pos);
         randoMove.Rando(speed, direction, pos);
     }
 
@@ -165,7 +168,7 @@ public class EnemyController : MonoBehaviour//, ICollectible
 
     void Launch()
     {
-        GameObject projectileObj = Instantiate(projectilePrefab, rb.position + Vector2.up * 0.5f, Quaternion.identity);
+        GameObject projectileObj = Instantiate(projectilePrefab, rb.position + Vector2.up * 0.2f, Quaternion.identity);
         Projectiles projectile = projectileObj.GetComponent<Projectiles>();
         if (projectile){
             Vector2 lookDir = new Vector2(1, 0);
