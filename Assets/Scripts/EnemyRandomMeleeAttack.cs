@@ -36,6 +36,7 @@ public class EnemyRandomMeleeAttack : MonoBehaviour
         {
             behaviour = ChooseBehaviour();
             needsNewBehaviour = false;
+            Debug.Log(gameObject.name);
         }
         switch (behaviour)
         {
@@ -49,10 +50,17 @@ public class EnemyRandomMeleeAttack : MonoBehaviour
                 if (shootTime < shootPeriod)
                 {
                     // Debug.Log("Melee active");
-                    if (anim){                        
-                        anim.SetFloat("Look X", direction);
-                        shootTime += Time.deltaTime;
-                        anim.SetTrigger("Attack");
+                    if (anim){  
+                        anim.SetFloat("Look X", direction); 
+                        if (gameObject.name == "finalBoss"){
+                            string attackType = BossAttack();
+                            shootTime += Time.deltaTime;
+                            anim.SetTrigger(attackType);
+                        } 
+                        else{
+                            shootTime += Time.deltaTime;
+                            anim.SetTrigger("Attack");
+                        }                  
                     }
                 }
                 else
@@ -99,6 +107,20 @@ public class EnemyRandomMeleeAttack : MonoBehaviour
                 return "shoot";
             default:
                 return "idle";
+        }
+    }
+
+    string BossAttack()
+    {
+        int behaviour = Random.Range(0, 2);
+        switch (behaviour)
+        {
+            case 0:
+                return "Attack2";
+            case 1:
+                return "Attack3";
+            default:
+                return "Attack";
         }
     }
 }
