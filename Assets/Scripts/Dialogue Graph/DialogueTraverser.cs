@@ -10,7 +10,7 @@ public class DialogueTraverser : MonoBehaviour
     public DialogueTree tree;
     private DialogueNode currentState;
 
-    private NodeType.DialogueNodeType endState;
+    public NodeType.DialogueNodeType endState;
     private float currentStateTime = 0;
 
     public string sceneOnFinish;

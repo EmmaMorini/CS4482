@@ -86,6 +86,7 @@ public class DialogueManager : MonoBehaviour
                             PlayerStats.Buffs.MoveSpeed *= 1.10f;
                             break;
                         }
+                        traverser.endState = NodeType.DialogueNodeType.None;
                         SceneManager.LoadScene(traverser.sceneOnFinish);
                     }
                     UpdateUI();
