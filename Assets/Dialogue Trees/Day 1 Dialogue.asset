@@ -13,26 +13,111 @@ MonoBehaviour:
   m_Name: Day 1 Dialogue
   m_EditorClassIdentifier: 
   nodeIds:
-  - hey
-  - how are you
-  - no thank you bye
+  - morning
+  - Good good
+  - Ugh Youth
+  - '*sigh* yes please'
+  - A little more decorum
+  - Thank You
+  - ...oldman
+  - you know... they say
+  - It's true!
+  - It only happens if
+  - 'Haha I would know. I worked here throughout my teenage years! '
+  - "Now that I think about it\u2026 I\u2019ve seen you here almost every day for
+    the past year and a bit! Who knows, maybe if you had a cup you\u2019d qualify
+    to have these mythical dreams hehe. "
+  - "Ah thanks sonny. Keep the change. And don\u2019t forget to take a sip of coffee
+    today! "
   nodeList:
-  - label: hey
+  - label: morning
     responses:
-    - responseID: hey back
-      nextNodeId: how are you
-    - responseID: how can I help you
-      nextNodeId: no thank you bye
+    - responseID: I'm great
+      nextNodeId: Good good
+    - responseID: Cut to the chase
+      nextNodeId: Ugh Youth
     nodeType: 0
-  - label: how are you
+  - label: Good good
     responses:
-    - responseID: done
+    - responseID: Can I get
+      nextNodeId: '*sigh* yes please'
+    - responseID: Soooo
+      nextNodeId: A little more decorum
+    nodeType: 0
+  - label: Ugh Youth
+    responses:
+    - responseID: Can I get
+      nextNodeId: '*sigh* yes please'
+    - responseID: Soooo
+      nextNodeId: A little more decorum
+    nodeType: 0
+  - label: '*sigh* yes please'
+    responses:
+    - responseID: Oooookay, the usual coming right up!
+      nextNodeId: Thank You
+    nodeType: 0
+  - label: A little more decorum
+    responses:
+    - responseID: Oooookay, the usual coming right up!
+      nextNodeId: Thank You
+    nodeType: 0
+  - label: Thank You
+    responses:
+    - responseID: ...
+      nextNodeId: ...oldman
+    nodeType: 0
+  - label: ...oldman
+    responses:
+    - responseID: ...2
+      nextNodeId: you know... they say
+    nodeType: 0
+  - label: you know... they say
+    responses:
+    - responseID: Is that so?
+      nextNodeId: It's true!
+    - responseID: ...Sure...
+      nextNodeId: It's true!
+    nodeType: 0
+  - label: It's true!
+    responses:
+    - responseID: (This man must be nuts)
+      nextNodeId: It only happens if
+    nodeType: 0
+  - label: It only happens if
+    responses:
+    - responseID: that seems like a very specific
+      nextNodeId: 'Haha I would know. I worked here throughout my teenage years! '
+    - responseID: what kinda rpg tomfoolery
+      nextNodeId: 'Haha I would know. I worked here throughout my teenage years! '
+    nodeType: 0
+  - label: 'Haha I would know. I worked here throughout my teenage years! '
+    responses:
+    - responseID: "Ahhh, I see\u2026."
+      nextNodeId: "Now that I think about it\u2026 I\u2019ve seen you here almost
+        every day for the past year and a bit! Who knows, maybe if you had a cup
+        you\u2019d qualify to have these mythical dreams hehe. "
+    - responseID: "That\u2019s neat!"
+      nextNodeId: "Now that I think about it\u2026 I\u2019ve seen you here almost
+        every day for the past year and a bit! Who knows, maybe if you had a cup
+        you\u2019d qualify to have these mythical dreams hehe. "
+    nodeType: 0
+  - label: "Now that I think about it\u2026 I\u2019ve seen you here almost every
+      day for the past year and a bit! Who knows, maybe if you had a cup you\u2019d
+      qualify to have these mythical dreams hehe. "
+    responses:
+    - responseID: "Aaaalright that\u2019s nice. Anyway here\u2019s your coffee. "
+      nextNodeId: "Ah thanks sonny. Keep the change. And don\u2019t forget to take
+        a sip of coffee today! "
+    - responseID: "You\u2019re funny sir! Also, your coffee is ready."
+      nextNodeId: "Ah thanks sonny. Keep the change. And don\u2019t forget to take
+        a sip of coffee today! "
+    nodeType: 0
+  - label: "Ah thanks sonny. Keep the change. And don\u2019t forget to take a sip
+      of coffee today! "
+    responses:
+    - responseID: 'Have a good day! (And please stop telling fairy tales. Time to
+        go have my daily dose of caffeine) '
       nextNodeId: <END>
     nodeType: 2
-  - label: no thank you bye
-    responses:
-    - responseID: end
-      nextNodeId: <END>
-    nodeType: 3
-  entryPointId: hey
+  entryPointId: morning
   textSource: {fileID: 11400000, guid: 57cc121055ba6994abc6ef45ddb1232c, type: 2}

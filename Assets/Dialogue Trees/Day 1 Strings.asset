@@ -13,46 +13,233 @@ MonoBehaviour:
   m_Name: Day 1 Strings
   m_EditorClassIdentifier: 
   languageKeys:
-  - hey
-  - hey back
-  - how are you
-  - done
-  - how can I help you
-  - no thank you bye
-  - end
+  - morning
+  - I'm great
+  - Cut to the chase
+  - Good good
+  - Ugh Youth
+  - Can I get
+  - Soooo
+  - Oooookay, the usual coming right up!
+  - '*sigh* yes please'
+  - A little more decorum
+  - Thank You
+  - ...
+  - ...oldman
+  - ...2
+  - you know... they say
+  - Is that so?
+  - ...Sure...
+  - It's true!
+  - (This man must be nuts)
+  - It only happens if
+  - that seems like a very specific
+  - what kinda rpg tomfoolery
+  - 'Haha I would know. I worked here throughout my teenage years! '
+  - "Ahhh, I see\u2026."
+  - "That\u2019s neat!"
+  - "Now that I think about it\u2026 I\u2019ve seen you here almost every day for
+    the past year and a bit! Who knows, maybe if you had a cup you\u2019d qualify
+    to have these mythical dreams hehe. "
+  - "Aaaalright that\u2019s nice. Anyway here\u2019s your coffee. "
+  - "You\u2019re funny sir! Also, your coffee is ready."
+  - "Ah thanks sonny. Keep the change. And don\u2019t forget to take a sip of coffee
+    today! "
+  - 'Have a good day! (And please stop telling fairy tales. Time to go have my daily
+    dose of caffeine) '
   languageMaps:
+  - languages: 000000000200000001000000
+    translationList:
+    - Morning Zach, how are you today?
+    - Buongiorno Zach, come stai oggi?
+    - "Ch\xE0o bu\u1ED5i s\xE1ng Zach, h\xF4m nay b\u1EA1n th\u1EBF n\xE0o?"
   - languages: 000000000100000002000000
     translationList:
-    - hey
-    - hey
-    - hey
+    - "I\u2019m great sir, how about you? "
+    - "T\xF4i r\u1EA5t tuy\u1EC7t th\u01B0a ng\xE0i, c\xF2n b\u1EA1n th\xEC sao?"
+    - Sono fantastico signore, e tu?
   - languages: 000000000100000002000000
     translationList:
-    - hey
-    - hey
-    - hey
+    - "Cut to the chase old man, there\u2019s a lineup."
+    - "C\u1EAFt \u0111\u1EC3 \u0111u\u1ED5i theo \xF4ng gi\xE0, c\xF3 m\u1ED9t \u0111\u1ED9i
+      h\xECnh."
+    - "Veniamo al sodo, vecchio, c'\xE8 una scaletta."
+  - languages: 000000000200000001000000
+    translationList:
+    - Good, good. These old bones are still sturdy hahaeugh *cough*
+    - Bene bene. Queste vecchie ossa sono ancora robuste hahaeugh *cough*
+    - "T\u1ED1t t\u1ED1t. Nh\u1EEFng kh\xFAc x\u01B0\u01A1ng c\u0169 n\xE0y v\u1EABn
+      c\u1EE9ng c\xE1p hahaeugh *ho*"
   - languages: 000000000100000002000000
     translationList:
-    - how are you
-    - how are you
-    - how are you
+    - Ugh, youth these days. Always in a rush. All attitude, no respect.
+    - "Uh, gi\u1EDBi tr\u1EBB ng\xE0y nay. L\xFAc n\xE0o c\u0169ng v\u1ED9i v\xE0ng.
+      T\u1EA5t c\u1EA3 th\xE1i \u0111\u1ED9, kh\xF4ng t\xF4n tr\u1ECDng."
+    - Ugh, giovani di questi tempi. Sempre di fretta. Tutto atteggiamento, nessun
+      rispetto.
   - languages: 000000000100000002000000
     translationList:
-    - fin
-    - fin
-    - fin
+    - Can I get you the usual?
+    - "T\xF4i c\xF3 th\u1EC3 l\u1EA5y cho b\u1EA1n b\xECnh th\u01B0\u1EDDng kh\xF4ng?"
+    - Posso darti il solito?
   - languages: 000000000100000002000000
     translationList:
-    - how can i help you
-    - how can i help you in viet
-    - how can I help you in italian
+    - Sooooo, what do ya want?
+    - "Sooooo, b\u1EA1n mu\u1ED1n g\xEC?"
+    - Alloraaaa, cosa vuoi?
   - languages: 000000000100000002000000
     translationList:
-    - I don't want anything bye
-    - I don't want anything bye in viet
-    - I don't want anything bye in italian
+    - Oooookay, the usual coming right up!
+    - "Oooookay, b\xECnh th\u01B0\u1EDDng \u0111\u1EBFn ngay!"
+    - Oooookay, il solito in arrivo!
+  - languages: 000000000200000001000000
+    translationList:
+    - '*Sigh* yes please.'
+    - "*Sospiro* s\xEC, per favore."
+    - "*Th\u1EDF d\xE0i* v\xE2ng l\xE0m \u01A1n."
+  - languages: 000000000200000001000000
+    translationList:
+    - "A little more decorum please. This is a respected establishment. And I\u2019ll
+      have the usual."
+    - "Un po' pi\xF9 di decoro, per favore. Questa \xE8 una struttura rispettata.
+      E avr\xF2 il solito."
+    - "Vui l\xF2ng trang tr\xED th\xEAm m\u1ED9t ch\xFAt. \u0110\xE2y l\xE0 m\u1ED9t
+      c\u01A1 s\u1EDF \u0111\u01B0\u1EE3c k\xEDnh tr\u1ECDng. V\xE0 t\xF4i s\u1EBD
+      c\xF3 b\xECnh th\u01B0\u1EDDng."
   - languages: 000000000100000002000000
     translationList:
-    - aite
-    - aite
-    - aite
+    - Thank You
+    - "C\u1EA3m \u01A1n"
+    - Grazie
+  - languages: 000000000100000002000000
+    translationList:
+    - ...
+    - ...
+    - ...
+  - languages: 000000000100000002000000
+    translationList:
+    - ...
+    - ...
+    - ...
+  - languages: 000000000100000002000000
+    translationList:
+    - ...
+    - ...
+    - ...
+  - languages: 000000000200000001000000
+    translationList:
+    - "you know\u2026 they say the coffee beans purchased by the owner of this shop
+      are of a special quality."
+    - "sai\u2026 si dice che i chicchi di caff\xE8 acquistati dal titolare di questo
+      negozio siano di una qualit\xE0 speciale."
+    - "b\u1EA1n bi\u1EBFt \u0111\u1EA5y\u2026 h\u1ECD n\xF3i r\u1EB1ng nh\u1EEFng
+      h\u1EA1t c\xE0 ph\xEA m\xE0 ch\u1EE7 c\u1EEDa h\xE0ng n\xE0y mua c\xF3 ch\u1EA5t
+      l\u01B0\u1EE3ng \u0111\u1EB7c bi\u1EC7t."
+  - languages: 000000000100000002000000
+    translationList:
+    - Is that so?
+    - "L\xE0 v\u1EADy sao?"
+    - "\xC8 cos\xEC?"
+  - languages: 000000000100000002000000
+    translationList:
+    - ...Sure...
+    - "...Ch\u1EAFc ch\u1EAFn r\u1ED3i..."
+    - ...Sicuro...
+  - languages: 000000000100000002000000
+    translationList:
+    - "it\u2019s true! You may be skeptical, but apparently coffee made from those
+      beans has the ability to give people some pretty interesting dreams.. But it
+      doesn\u2019t happen to just anyone."
+    - "\u0111\xFAng r\u1ED3i! B\u1EA1n c\xF3 th\u1EC3 nghi ng\u1EDD, nh\u01B0ng r\xF5
+      r\xE0ng c\xE0 ph\xEA l\xE0m t\u1EEB nh\u1EEFng h\u1EA1t c\xE0 ph\xEA \u0111\xF3
+      c\xF3 kh\u1EA3 n\u0103ng mang \u0111\u1EBFn cho m\u1ECDi ng\u01B0\u1EDDi nh\u1EEFng
+      gi\u1EA5c m\u01A1 kh\xE1 th\xFA v\u1ECB.. Nh\u01B0ng \u0111i\u1EC1u \u0111\xF3
+      kh\xF4ng x\u1EA3y ra v\u1EDBi ri\xEAng ai."
+    - "\xE8 vero! Potresti essere scettico, ma a quanto pare il caff\xE8 fatto con
+      quei chicchi ha la capacit\xE0 di regalare alle persone dei sogni piuttosto
+      interessanti.. Ma non capita a tutti."
+  - languages: 000000000100000002000000
+    translationList:
+    - (This man must be nuts)
+    - "(\xD4ng n\xE0y ch\u1EAFc \u0111i\xEAn r\u1ED3i)"
+    - (Quest'uomo deve essere pazzo)
+  - languages: 000000000100000002000000
+    translationList:
+    - "It only happens if you\u2019ve mastered all of the coffee shop\u2019s recipes
+      and have been an employee of the store for at least a year"
+    - "\u0110i\u1EC1u \u0111\xF3 ch\u1EC9 x\u1EA3y ra n\u1EBFu b\u1EA1n n\u1EAFm
+      v\u1EEFng t\u1EA5t c\u1EA3 c\xE1c c\xF4ng th\u1EE9c pha ch\u1EBF c\u1EE7a qu\xE1n
+      c\xE0 ph\xEA v\xE0 \u0111\xE3 l\xE0 nh\xE2n vi\xEAn c\u1EE7a c\u1EEDa h\xE0ng
+      \xEDt nh\u1EA5t m\u1ED9t n\u0103m"
+    - Succede solo se hai imparato tutte le ricette della caffetteria e sei un dipendente
+      del negozio da almeno un anno
+  - languages: 000000000100000002000000
+    translationList:
+    - that seems like a very specific requirement.
+    - "\u0111\xF3 c\xF3 v\u1EBB nh\u01B0 l\xE0 m\u1ED9t y\xEAu c\u1EA7u r\u1EA5t
+      c\u1EE5 th\u1EC3."
+    - sembra un requisito molto specifico.
+  - languages: 000000000100000002000000
+    translationList:
+    - what kind of RPG tomfoolery is this?
+    - "\u0111\xE2y l\xE0 th\u1EC3 lo\u1EA1i RPG tomfoolery n\xE0o?"
+    - "che razza di gioco di ruolo \xE8 questo?"
+  - languages: 000000000200000001000000
+    translationList:
+    - 'Haha I would know. I worked here throughout my teenage years! '
+    - Ahah lo saprei. Ho lavorato qui per tutta la mia adolescenza!
+    - "Haha t\xF4i s\u1EBD bi\u1EBFt. T\xF4i \u0111\xE3 l\xE0m vi\u1EC7c \u1EDF \u0111\xE2y
+      trong su\u1ED1t nh\u1EEFng n\u0103m tu\u1ED5i thi\u1EBFu ni\xEAn c\u1EE7a m\xECnh!"
+  - languages: 000000000100000002000000
+    translationList:
+    - "Ahhh, I see\u2026."
+    - "Ahhh, t\xF4i hi\u1EC3u r\u1ED3i\u2026."
+    - "Ahhh, capisco\u2026."
+  - languages: 000000000100000002000000
+    translationList:
+    - "That\u2019s neat!"
+    - "Th\u1EADt g\u1ECDn g\xE0ng!"
+    - "\xC8 carino!"
+  - languages: 000000000100000002000000
+    translationList:
+    - "Now that I think about it\u2026 I\u2019ve seen you here almost every day for
+      the past year and a bit! Who knows, maybe if you had a cup you\u2019d qualify
+      to have these mythical dreams hehe."
+    - "B\xE2y gi\u1EDD t\xF4i ngh\u0129 v\u1EC1 n\xF3\u2026 T\xF4i \u0111\xE3 th\u1EA5y
+      b\u1EA1n \u1EDF \u0111\xE2y h\u1EA7u nh\u01B0 m\u1ED7i ng\xE0y trong n\u0103m
+      qua v\xE0 m\u1ED9t ch\xFAt! Bi\u1EBFt \u0111\xE2u n\u1EBFu b\u1EA1n c\xF3 m\u1ED9t
+      chi\u1EBFc c\u1ED1c th\xEC b\u1EA1n s\u1EBD c\xF3 \u0111\u1EE7 \u0111i\u1EC1u
+      ki\u1EC7n \u0111\u1EC3 c\xF3 nh\u1EEFng gi\u1EA5c m\u01A1 th\u1EA7n tho\u1EA1i
+      n\xE0y hehe."
+    - "Ora che ci penso\u2026 ti ho visto qui quasi tutti i giorni nell'ultimo anno
+      e un po'! Chiss\xE0, forse se avessi una coppa ti qualificheresti per fare
+      questi sogni mitici eheh."
+  - languages: 000000000100000002000000
+    translationList:
+    - "Aaaalright that\u2019s nice. Anyway here\u2019s your coffee. "
+    - "\u0110\u01B0\u1EE3c r\u1ED3i, th\u1EADt tuy\u1EC7t. D\xF9 sao \u0111\xE2y
+      l\xE0 c\xE0 ph\xEA c\u1EE7a b\u1EA1n."
+    - "Va bene va bene. Comunque ecco il tuo caff\xE8."
+  - languages: 000000000100000002000000
+    translationList:
+    - "You\u2019re funny sir! Also, your coffee is ready."
+    - "B\u1EA1n th\u1EADt h\xE0i h\u01B0\u1EDBc th\u01B0a \xF4ng! Ngo\xE0i ra, c\xE0
+      ph\xEA c\u1EE7a b\u1EA1n \u0111\xE3 s\u1EB5n s\xE0ng."
+    - "Sei divertente signore! Inoltre, il tuo caff\xE8 \xE8 pronto."
+  - languages: 000000000200000001000000
+    translationList:
+    - "Ah thanks sonny. Keep the change. And don\u2019t forget to take a sip of coffee
+      today! "
+    - "Ah grazie figliolo. Tieni il resto. E non dimenticare di prendere un sorso
+      di caff\xE8 oggi!"
+    - "\xC0, c\u1EA3m \u01A1n con trai. Gi\u1EEF thay \u0111\u1ED5i. V\xE0 \u0111\u1EEBng
+      qu\xEAn u\u1ED1ng m\u1ED9t ng\u1EE5m c\xE0 ph\xEA h\xF4m nay!"
+  - languages: 000000000100000002000000
+    translationList:
+    - 'Have a good day! (And please stop telling fairy tales. Time to go have my
+      daily dose of caffeine) '
+    - "Ch\xFAc b\u1EA1n ng\xE0y m\u1EDBi t\u1ED1t l\xE0nh! (V\xE0 l\xE0m \u01A1n
+      \u0111\u1EEBng k\u1EC3 chuy\u1EC7n c\u1ED5 t\xEDch n\u1EEFa. \u0110\xE3 \u0111\u1EBFn
+      l\xFAc u\u1ED1ng m\u1ED9t l\u01B0\u1EE3ng caffein h\xE0ng ng\xE0y r\u1ED3i)"
+    - "Buona giornata! (E per favore smettila di raccontare favole. \xC8 ora di andare
+      a prendere la mia dose giornaliera di caffeina)"

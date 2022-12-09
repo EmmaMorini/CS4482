@@ -12,5 +12,235 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adfb985037de4b040a6b450ab9d909cb, type: 3}
   m_Name: Day 3 Strings
   m_EditorClassIdentifier: 
-  languageKeys: []
-  languageMaps: []
+  languageKeys:
+  - Hey Zach, how are ya?
+  - "Oh my god Sherry. You won\u2019t believe this."
+  - "H-Hey Sherry\u2026"
+  - What??
+  - "The old man\u2026. His story\u2026"
+  - "What\u2019s wrong? You look kinda pale.. "
+  - "Ohhh THAT story? About the coffee beans?? Don\u2019t believe him, Zach, he\u2019s
+    jst playing around."
+  - But I DID have a weird dream. TWO nights in a row.
+  - " I guess it could be a coincidence\u2026 "
+  - "Oh. Really? Hm\u2026 "
+  - A coincidence? Did you have a dream?
+  - 'Yeah, two! '
+  - ...
+  - "\u2026. Guess you better gear up for the boss battle then. Night three here
+    we gooooo!"
+  - Haha. Very funny Sherry. What coffee do you want.
+  - One mocha please!
+  - Coming right up.
+  - "What\u2019s that you wanted? An americano? "
+  - "Ugh! Stop! I\u2019ll stop making fun of you so give me my mocha."
+  - Okay okay.
+  - 'Thanks! Mmmm it smells great. You really have a knack for making coffee you
+    know? '
+  - 'Heh thanks, Sherry. '
+  - ' Ah really? (My mastery of coffee may have put me in a hero-must-conquer-the-enemies
+    scenario. I am MIGHTY)'
+  - 'Oh, and about the old man. Get this. I ran into him on my way here and he asked
+    to tell you something. '
+  - Hm?
+  - "\u201CHave plenty of coffee today Zach. You may need the boost in your quests.\u201D
+    Haha! Isn\u2019t he the funniest?"
+  - "O-oh. Yeah. Haha\u2026 "
+  - He really is. Time to power up I guess!
+  - "Don\u2019t worry Zach, he\u2019s just having fun. He doesn\u2019t have Twitter
+    so he has to entertain himself in more ways than just a crossword puzzle."
+  - "(The man knows more than he\u2019s letting on\u2026)"
+  - "That\u2019s the spirit!"
+  languageMaps:
+  - languages: 000000000100000002000000
+    translationList:
+    - Hey Zach, how are ya?
+    - "N\xE0y Zach, b\u1EA1n kh\u1ECFe kh\xF4ng?"
+    - Ehi Zach, come stai?
+  - languages: 000000000100000002000000
+    translationList:
+    - "Oh my god Sherry. You won\u2019t believe this."
+    - "Tr\u1EDDi \u01A1i Sherry. B\u1EA1n s\u1EBD kh\xF4ng tin \u0111i\u1EC1u n\xE0y."
+    - Oh mio dio Sherry. Non ci crederai.
+  - languages: 000000000100000002000000
+    translationList:
+    - "H-Hey Sherry\u2026"
+    - "N-N\xE0y Sherry\u2026"
+    - "E-Ehi Sherry\u2026"
+  - languages: 000000000200000001000000
+    translationList:
+    - What??
+    - Che cosa??
+    - "G\xEC??"
+  - languages: 000000000100000002000000
+    translationList:
+    - "The old man\u2026. His story\u2026"
+    - "\xD4ng gi\xE0\u2026. C\xE2u chuy\u1EC7n c\u1EE7a anh ta\u2026"
+    - "Il vecchio\u2026. La sua storia\u2026"
+  - languages: 000000000100000002000000
+    translationList:
+    - "What\u2019s wrong? You look kinda pale.. "
+    - "Chuy\u1EC7n g\xEC v\u1EADy? Tr\xF4ng b\u1EA1n h\u01A1i nh\u1EE3t nh\u1EA1t.."
+    - "Cosa c'\xE8 che non va? Sembri un po' pallido.."
+  - languages: 000000000100000002000000
+    translationList:
+    - "Ohhh THAT story? About the coffee beans?? Don\u2019t believe him, Zach, he\u2019s
+      jst playing around."
+    - "Ohhhh c\xE2u chuy\u1EC7n \u0111\xF3? V\u1EC1 h\u1EA1t c\xE0 ph\xEA ?? \u0110\u1EEBng
+      tin anh \u1EA5y, Zach, anh \u1EA5y ch\u1EC9 \u0111\xF9a th\xF4i."
+    - "Ohhh QUELLA storia? A proposito dei chicchi di caff\xE8?? Non credergli, Zach,
+      sta solo scherzando."
+  - languages: 000000000100000002000000
+    translationList:
+    - But I DID have a weird dream. TWO nights in a row.
+    - "Nh\u01B0ng t\xF4i \u0110\xC3 c\xF3 m\u1ED9t gi\u1EA5c m\u01A1 k\u1EF3 l\u1EA1.
+      HAI \u0111\xEAm li\xEAn ti\u1EBFp."
+    - Ma ho fatto uno strano sogno. DUE sere di fila.
+  - languages: 000000000100000002000000
+    translationList:
+    - " I guess it could be a coincidence\u2026 "
+    - "T\xF4i \u0111o\xE1n n\xF3 c\xF3 th\u1EC3 l\xE0 m\u1ED9t s\u1EF1 tr\xF9ng h\u1EE3p\u2026"
+    - Immagino che potrebbe essere una coincidenza...
+  - languages: 000000000200000001000000
+    translationList:
+    - "Oh. Really? Hm\u2026 "
+    - Oh. Davvero? Ehm...
+    - "\u1ED2. C\xF3 th\u1EADt kh\xF4ng? H\u1EEDm\u2026"
+  - languages: 000000000200000001000000
+    translationList:
+    - A coincidence? Did you have a dream?
+    - Una coincidenza? Hai fatto un sogno?
+    - "M\u1ED9t s\u1EF1 tr\xF9ng h\u1EE3p? B\u1EA1n \u0111\xE3 c\xF3 m\u1ED9t gi\u1EA5c
+      m\u01A1?"
+  - languages: 000000000100000002000000
+    translationList:
+    - 'Yeah, two! '
+    - "V\xE2ng, hai!"
+    - "S\xEC, due!"
+  - languages: 000000000100000002000000
+    translationList:
+    - ...
+    - ...
+    - ...
+  - languages: 000000000100000002000000
+    translationList:
+    - " \u2026. Guess you better gear up for the boss battle then. Night three here
+      we gooooo!"
+    - "\u2026. \u0110o\xE1n b\u1EA1n n\xEAn chu\u1EA9n b\u1ECB t\u1ED1t h\u01A1n
+      cho tr\u1EADn \u0111\u1EA5u tr\xF9m sau \u0111\xF3. \u0110\xEAm th\u1EE9 ba
+      \u1EDF \u0111\xE2y ch\xFAng t\xF4i gooooo!"
+    - "\u2026. Immagino sia meglio che ti prepari per la battaglia con il boss, allora.
+      Notte tre qui andiamooooo!"
+  - languages: 000000000100000002000000
+    translationList:
+    - Haha. Very funny Sherry. What coffee do you want.
+    - "Ha ha. Sherry r\u1EA5t h\xE0i h\u01B0\u1EDBc. B\u1EA1n mu\u1ED1n c\xE0 ph\xEA
+      g\xEC."
+    - "Ahah. Sherry molto divertente. Che caff\xE8 vuoi."
+  - languages: 000000000100000002000000
+    translationList:
+    - One mocha please!
+    - "Xin vui l\xF2ng m\u1ED9t mocha!"
+    - Una moka per favore!
+  - languages: 000000000100000002000000
+    translationList:
+    - Coming right up.
+    - "S\u1EAFp t\u1EDBi r\u1ED3i."
+    - In arrivo.
+  - languages: 000000000100000002000000
+    translationList:
+    - "What\u2019s that you wanted? An americano?"
+    - "B\u1EA1n mu\u1ED1n g\xEC? \u0102n M\u1EF9?"
+    - Cosa volevi? In americano?
+  - languages: 000000000100000002000000
+    translationList:
+    - "Ugh! Stop! I\u2019ll stop making fun of you so give me my mocha."
+    - "\u01AF! D\u1EEBng l\u1EA1i! T\xF4i s\u1EBD ng\u1EEBng ch\u1EBF gi\u1EC5u b\u1EA1n
+      v\xEC v\u1EADy h\xE3y \u0111\u01B0a t\xF4i c\u1ED1c mocha c\u1EE7a t\xF4i."
+    - "Uffa! Fermare! Smetter\xF2 di prenderti in giro, quindi dammi la mia moka."
+  - languages: 000000000100000002000000
+    translationList:
+    - Okay okay.
+    - "\u0110\u01B0\u1EE3c r\u1ED3i \u0111\u01B0\u1EE3c r\u1ED3i."
+    - Ok ok.
+  - languages: 000000000100000002000000
+    translationList:
+    - 'Thanks! Mmmm it smells great. You really have a knack for making coffee you
+      know? '
+    - "C\u1EA3m \u01A1n! Mmmm n\xF3 c\xF3 m\xF9i tuy\u1EC7t v\u1EDDi. B\u1EA1n th\u1EF1c
+      s\u1EF1 c\xF3 m\u1ED9t s\u1EDF tr\u01B0\u1EDDng \u0111\u1EC3 pha c\xE0 ph\xEA
+      b\u1EA1n bi\u1EBFt kh\xF4ng?"
+    - "Grazie! Mmm ha un ottimo profumo. Hai davvero un talento per fare il caff\xE8,
+      sai?"
+  - languages: 000000000100000002000000
+    translationList:
+    - 'Heh thanks, Sherry. '
+    - "C\u1EA3m \u01A1n, Sherry."
+    - Eh grazie, Sherry.
+  - languages: 000000000100000002000000
+    translationList:
+    - ' Ah really? (My mastery of coffee may have put me in a hero-must-conquer-the-enemies
+      scenario. I am MIGHTY)'
+    - "\xC0 th\u1EADt sao? (Kh\u1EA3 n\u0103ng u\u1ED1ng c\xE0 ph\xEA th\xE0nh th\u1EA1o
+      c\u1EE7a t\xF4i c\xF3 th\u1EC3 \u0111\xE3 \u0111\u1EB7t t\xF4i v\xE0o t\xECnh
+      hu\u1ED1ng anh h\xF9ng ph\u1EA3i chi\u1EBFn th\u1EAFng k\u1EBB th\xF9. T\xD4I
+      L\xC0 MIGHTY)"
+    - "Ah davvero? (La mia padronanza del caff\xE8 potrebbe avermi messo in uno scenario
+      da eroe che deve conquistare i nemici. Sono POTENTE)"
+  - languages: 000000000200000001000000
+    translationList:
+    - 'Oh, and about the old man. Get this. I ran into him on my way here and he
+      asked to tell you something. '
+    - Oh, e riguardo al vecchio. Prendi questo. L'ho incontrato venendo qui e mi
+      ha chiesto di dirti una cosa.
+    - "\u1ED2, v\xE0 v\u1EC1 \xF4ng gi\xE0. C\xF3 \u0111\u01B0\u1EE3c \u0111i\u1EC1u
+      n\xE0y. T\xF4i t\xECnh c\u1EDD g\u1EB7p anh \u1EA5y tr\xEAn \u0111\u01B0\u1EDDng
+      \u0111\u1EBFn \u0111\xE2y v\xE0 anh \u1EA5y mu\u1ED1n n\xF3i v\u1EDBi b\u1EA1n
+      m\u1ED9t \u0111i\u1EC1u."
+  - languages: 000000000100000002000000
+    translationList:
+    - Hm?
+    - "H\u1EEDm?"
+    - Ehm?
+  - languages: 000000000200000001000000
+    translationList:
+    - "\u201CHave plenty of coffee today Zach. You may need the boost in your quests.\u201D
+      Haha! Isn\u2019t he the funniest?"
+    - "\u201CPrendi un sacco di caff\xE8 oggi, Zach. Potresti aver bisogno di una
+      spinta nelle tue missioni. Ahah! Non \xE8 il pi\xF9 divertente?"
+    - "\u201CH\xF4m nay u\u1ED1ng th\u1EADt nhi\u1EC1u c\xE0 ph\xEA nh\xE9 Zach.
+      B\u1EA1n c\xF3 th\u1EC3 c\u1EA7n s\u1EF1 th\xFAc \u0111\u1EA9y trong c\xE1c
+      nhi\u1EC7m v\u1EE5 c\u1EE7a m\xECnh. Ha ha! Anh \u1EA5y kh\xF4ng ph\u1EA3i
+      l\xE0 ng\u01B0\u1EDDi h\xE0i h\u01B0\u1EDBc nh\u1EA5t sao?"
+  - languages: 000000000100000002000000
+    translationList:
+    - "O-oh. Yeah. Haha\u2026 "
+    - "\xD4-\u1ED3. \u1EEA. ha ha\u2026"
+    - "Oh oh. S\xEC. Ahah\u2026"
+  - languages: 000000000100000002000000
+    translationList:
+    - He really is. Time to power up I guess!
+    - "Anh \u1EA5y th\u1EF1c s\u1EF1 l\xE0. Th\u1EDDi gian \u0111\u1EC3 t\u0103ng
+      s\u1EE9c m\u1EA1nh t\xF4i \u0111o\xE1n!"
+    - "Lo \xE8 davvero. \xC8 ora di accendere, immagino!"
+  - languages: 000000000200000001000000
+    translationList:
+    - "Don\u2019t worry Zach, he\u2019s just having fun. He doesn\u2019t have Twitter
+      so he has to entertain himself in more ways than just a crossword puzzle."
+    - "Non preoccuparti Zach, si sta solo divertendo. Non ha Twitter, quindi deve
+      intrattenersi in pi\xF9 modi di un semplice cruciverba."
+    - "\u0110\u1EEBng lo l\u1EAFng Zach, anh \u1EA5y ch\u1EC9 vui v\u1EBB th\xF4i.
+      Anh \u1EA5y kh\xF4ng c\xF3 Twitter n\xEAn anh \u1EA5y ph\u1EA3i t\u1EF1 gi\u1EA3i
+      tr\xED b\u1EB1ng nhi\u1EC1u c\xE1ch h\u01A1n l\xE0 ch\u1EC9 gi\u1EA3i \xF4
+      ch\u1EEF."
+  - languages: 000000000100000002000000
+    translationList:
+    - "(The man knows more than he\u2019s letting on\u2026)"
+    - "(Ng\u01B0\u1EDDi \u0111\xE0n \xF4ng bi\u1EBFt nhi\u1EC1u h\u01A1n nh\u1EEFng
+      g\xEC anh ta cho ph\xE9p\u2026)"
+    - "(L'uomo sa pi\xF9 di quanto lascia intendere...)"
+  - languages: 000000000200000001000000
+    translationList:
+    - "That\u2019s the spirit!"
+    - "Questo \xE8 lo spirito!"
+    - "\u0110\xF3 l\xE0 tinh th\u1EA7n!"
