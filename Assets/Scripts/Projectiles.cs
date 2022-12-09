@@ -53,7 +53,7 @@ public class Projectiles : MonoBehaviour
             if (e)
             {
                 Debug.Log("hit the enemy hitbox, parent = " + e);
-                e.ChangeHealth(-1);
+                e.ChangeHealth(PlayerStats.Damage);
                 if (!anim) Destroy(gameObject);
             }
             else if (p)

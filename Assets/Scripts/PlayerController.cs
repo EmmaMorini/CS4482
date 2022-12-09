@@ -154,7 +154,7 @@ public class PlayerController : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + amt, 0, maxHealth);
         if (currentHealth == 0) Die();
         Debug.Log(currentHealth + "/" + maxHealth);
-        // HealthBar.instance.SetHealth((float)currentHealth / (float)maxHealth);
+        HealthBar.instance.SetHealth((float)currentHealth / (float)maxHealth);
     }
 
     void Launch()
