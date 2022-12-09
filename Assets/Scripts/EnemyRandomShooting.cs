@@ -27,7 +27,7 @@ public class EnemyRandomShooting : MonoBehaviour
         {
             behaviour = ChooseBehaviour();
             needsNewBehaviour = false;
-            Debug.Log("Hello does it goes here?");
+            // Debug.Log("Hello does it goes here?");
         }
         // Debug.Log(behaviour);
         switch (behaviour)
@@ -45,7 +45,7 @@ public class EnemyRandomShooting : MonoBehaviour
                     // Debug.Log("Shooting time");
                     if (anim)
                     {
-                        Debug.Log(anim);
+                        // Debug.Log(anim);
                         anim.SetFloat("Look X", direction);
                         // anim.SetFloat("Y", 0);
                         anim.SetTrigger("Launch");

@@ -77,7 +77,7 @@ public class Projectiles : MonoBehaviour
             if (direction.x > 0) anim.SetFloat("Look X", 1);
             else if (direction.x < 0) anim.SetFloat("Look X", -1);
             anim.SetTrigger("Shoot");
-            Debug.Log("Shoot on");            
+            // Debug.Log("Shoot on");            
         }
         if (vertical){
             rb.AddForce(Vector2.up * direction.y * force);

@@ -36,7 +36,7 @@ public class EnemyRandomMeleeAttack : MonoBehaviour
         {
             behaviour = ChooseBehaviour();
             needsNewBehaviour = false;
-            Debug.Log(gameObject.name);
+            // Debug.Log(gameObject.name);
         }
         switch (behaviour)
         {
