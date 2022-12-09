@@ -572,7 +572,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tree: {fileID: 11400000, guid: 11ad6ed150c3b3f469d19f1a99b2a945, type: 2}
-  sceneOnFinish: Day3
+  endState: 0
+  sceneOnFinish: Night2
 --- !u!114 &315069598
 MonoBehaviour:
   m_ObjectHideFlags: 0

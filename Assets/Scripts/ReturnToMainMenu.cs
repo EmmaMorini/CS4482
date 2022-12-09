@@ -13,7 +13,7 @@ public class ReturnToMainMenu : MonoBehaviour
 
     public void Update()
     {
-        if (Time.unscaledTime - startTime > 10f)
+        if (Time.unscaledTime - startTime > 5f)
         {
             SceneManager.LoadScene("MainMenu");
             this.enabled = false;
