@@ -10,7 +10,8 @@ public class DialogueTraverser : MonoBehaviour
     public DialogueTree tree;
     private DialogueNode currentState;
 
-    private NodeType.DialogueNodeType endState;
+    public NodeType.DialogueNodeType endState;
+    private float currentStateTime = 0;
 
     public string sceneOnFinish;
     void Start()
@@ -21,6 +22,16 @@ public class DialogueTraverser : MonoBehaviour
 
     public void SelectOption(int optionNumber)
     {
+        if(Time.fixedTime - currentStateTime < 0.5)
+        {
+            return;
+        }
+        currentStateTime = Time.fixedTime;
+        Debug.Log("Clicked " + optionNumber + " ");
+        foreach(ResponseOption response in currentState.responses)
+        {
+            Debug.Log("option: " + response.nextNodeId + response.responseID);
+        }
         if(currentState == null || currentState.responses[optionNumber].nextNodeId == "<END>"){
             endState = currentState.nodeType;
             currentState = null;

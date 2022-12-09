@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : MonoBehaviour//, ICollectible
 {
     public float speed;
     bool vertical;
@@ -27,6 +27,9 @@ public class EnemyController : MonoBehaviour
     public Transform attackPoints;
     public float attackRange;
     public LayerMask playerLayer;
+    public Portal portal;
+    public GameObject ThisEnemy;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -91,7 +94,12 @@ public class EnemyController : MonoBehaviour
             boostDelay = boostDelayTime;
         }
         health = Mathf.Clamp(health + amt, 0, maxHealth);
-        if (health == 0) Die();
+        if (health == 0)
+        {
+            Die();//ortal.KilledOpponent(gameObject);
+            
+
+        }
         Debug.Log(health + "/" + maxHealth);
     }
 
@@ -179,4 +187,5 @@ public class EnemyController : MonoBehaviour
         }
         Gizmos.DrawWireSphere(attackPoints.position, attackRange);
     }
+
 }

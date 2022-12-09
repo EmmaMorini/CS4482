@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b975b3d3846c7ba4aa5c2e244949ee61, type: 3}
+  m_Name: Day 2 Dialogue
+  m_EditorClassIdentifier: 
+  nodeIds:
+  - Morning Zach!
+  - Just a cappuccino please. And any interesting dream stories haha!
+  - Ahhh did the old regular spook you yesterday? I ran into him on his way out.
+  - Hmm I suppose so.
+  - 'well, that man does enjoy joking around. But who knows, he may know the history
+    of this shop better than anyone! '
+  - "Ahh don\u2019t dwell on it too much. Anyway, is my coffee ready?"
+  nodeList:
+  - label: Morning Zach!
+    responses:
+    - responseID: Morning Ms. Smith. What can I get you today?
+      nextNodeId: Just a cappuccino please. And any interesting dream stories haha!
+    - responseID: Ms. Smith, I had such a weird dream oh my god.
+      nextNodeId: Ahhh did the old regular spook you yesterday? I ran into him on
+        his way out.
+    nodeType: 0
+  - label: Just a cappuccino please. And any interesting dream stories haha!
+    responses:
+    - responseID: Oh man is he going around and telling everyone that ridiculous
+        story?
+      nextNodeId: Hmm I suppose so.
+    nodeType: 0
+  - label: Ahhh did the old regular spook you yesterday? I ran into him on his way
+      out.
+    responses:
+    - responseID: Oh man is he going around and telling everyone that ridiculous
+        story?
+      nextNodeId: Hmm I suppose so.
+    nodeType: 0
+  - label: Hmm I suppose so.
+    responses:
+    - responseID: 'That dream must have been a coincidence because of the story he
+        told me. '
+      nextNodeId: 'well, that man does enjoy joking around. But who knows, he may
+        know the history of this shop better than anyone! '
+    - responseID: "What if\u2026 nah he was just messing with me."
+      nextNodeId: 'well, that man does enjoy joking around. But who knows, he may
+        know the history of this shop better than anyone! '
+    nodeType: 0
+  - label: 'well, that man does enjoy joking around. But who knows, he may know the
+      history of this shop better than anyone! '
+    responses:
+    - responseID: "don\u2019t encourage him Ms. Smith, please"
+      nextNodeId: "Ahh don\u2019t dwell on it too much. Anyway, is my coffee ready?"
+    - responseID: "Maybe\u2026"
+      nextNodeId: "Ahh don\u2019t dwell on it too much. Anyway, is my coffee ready?"
+    nodeType: 0
+  - label: "Ahh don\u2019t dwell on it too much. Anyway, is my coffee ready?"
+    responses:
+    - responseID: Ah, yes! Here it is. Have a good day Ms. Smith!
+      nextNodeId: <END>
+    nodeType: 1
+  entryPointId: Morning Zach!
+  textSource: {fileID: 11400000, guid: 6646dadb4eb9b7b478f8eab5f1d94ee7, type: 2}

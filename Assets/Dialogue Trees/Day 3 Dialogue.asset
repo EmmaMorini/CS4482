@@ -12,7 +12,125 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b975b3d3846c7ba4aa5c2e244949ee61, type: 3}
   m_Name: Day 3 Dialogue
   m_EditorClassIdentifier: 
-  nodeIds: []
-  nodeList: []
-  entryPointId: 
+  nodeIds:
+  - Hey Zach, how are ya?
+  - What??
+  - "What\u2019s wrong? You look kinda pale.. "
+  - "Ohhh THAT story? About the coffee beans?? Don\u2019t believe him, Zach, he\u2019s
+    jst playing around."
+  - "Oh. Really? Hm\u2026 "
+  - A coincidence? Did you have a dream?
+  - "\u2026. Guess you better gear up for the boss battle then. Night three here
+    we gooooo!"
+  - One mocha please!
+  - "Ugh! Stop! I\u2019ll stop making fun of you so give me my mocha."
+  - 'Thanks! Mmmm it smells great. You really have a knack for making coffee you
+    know? '
+  - 'Oh, and about the old man. Get this. I ran into him on my way here and he asked
+    to tell you something. '
+  - "\u201CHave plenty of coffee today Zach. You may need the boost in your quests.\u201D
+    Haha! Isn\u2019t he the funniest?"
+  - "Don\u2019t worry Zach, he\u2019s just having fun. He doesn\u2019t have Twitter
+    so he has to entertain himself in more ways than just a crossword puzzle."
+  - "That\u2019s the spirit!"
+  nodeList:
+  - label: Hey Zach, how are ya?
+    responses:
+    - responseID: "Oh my god Sherry. You won\u2019t believe this."
+      nextNodeId: What??
+    - responseID: "H-Hey Sherry\u2026"
+      nextNodeId: "What\u2019s wrong? You look kinda pale.. "
+    nodeType: 0
+  - label: What??
+    responses:
+    - responseID: "The old man\u2026. His story\u2026"
+      nextNodeId: "Ohhh THAT story? About the coffee beans?? Don\u2019t believe him,
+        Zach, he\u2019s jst playing around."
+    nodeType: 0
+  - label: "What\u2019s wrong? You look kinda pale.. "
+    responses:
+    - responseID: "The old man\u2026. His story\u2026"
+      nextNodeId: "Ohhh THAT story? About the coffee beans?? Don\u2019t believe him,
+        Zach, he\u2019s jst playing around."
+    nodeType: 0
+  - label: "Ohhh THAT story? About the coffee beans?? Don\u2019t believe him, Zach,
+      he\u2019s jst playing around."
+    responses:
+    - responseID: But I DID have a weird dream. TWO nights in a row.
+      nextNodeId: "Oh. Really? Hm\u2026 "
+    - responseID: " I guess it could be a coincidence\u2026 "
+      nextNodeId: A coincidence? Did you have a dream?
+    nodeType: 0
+  - label: "Oh. Really? Hm\u2026 "
+    responses:
+    - responseID: ...
+      nextNodeId: "\u2026. Guess you better gear up for the boss battle then. Night
+        three here we gooooo!"
+    nodeType: 0
+  - label: A coincidence? Did you have a dream?
+    responses:
+    - responseID: 'Yeah, two! '
+      nextNodeId: "\u2026. Guess you better gear up for the boss battle then. Night
+        three here we gooooo!"
+    nodeType: 0
+  - label: "\u2026. Guess you better gear up for the boss battle then. Night three
+      here we gooooo!"
+    responses:
+    - responseID: Haha. Very funny Sherry. What coffee do you want.
+      nextNodeId: One mocha please!
+    nodeType: 0
+  - label: One mocha please!
+    responses:
+    - responseID: Coming right up.
+      nextNodeId: 'Thanks! Mmmm it smells great. You really have a knack for making
+        coffee you know? '
+    - responseID: "What\u2019s that you wanted? An americano? "
+      nextNodeId: "Ugh! Stop! I\u2019ll stop making fun of you so give me my mocha."
+    nodeType: 0
+  - label: "Ugh! Stop! I\u2019ll stop making fun of you so give me my mocha."
+    responses:
+    - responseID: Okay okay.
+      nextNodeId: 'Thanks! Mmmm it smells great. You really have a knack for making
+        coffee you know? '
+    nodeType: 0
+  - label: 'Thanks! Mmmm it smells great. You really have a knack for making coffee
+      you know? '
+    responses:
+    - responseID: 'Heh thanks, Sherry. '
+      nextNodeId: 'Oh, and about the old man. Get this. I ran into him on my way
+        here and he asked to tell you something. '
+    - responseID: ' Ah really? (My mastery of coffee may have put me in a hero-must-conquer-the-enemies
+        scenario. I am MIGHTY)'
+      nextNodeId: 'Oh, and about the old man. Get this. I ran into him on my way
+        here and he asked to tell you something. '
+    nodeType: 0
+  - label: 'Oh, and about the old man. Get this. I ran into him on my way here and
+      he asked to tell you something. '
+    responses:
+    - responseID: Hm?
+      nextNodeId: "\u201CHave plenty of coffee today Zach. You may need the boost
+        in your quests.\u201D Haha! Isn\u2019t he the funniest?"
+    nodeType: 0
+  - label: "\u201CHave plenty of coffee today Zach. You may need the boost in your
+      quests.\u201D Haha! Isn\u2019t he the funniest?"
+    responses:
+    - responseID: "O-oh. Yeah. Haha\u2026 "
+      nextNodeId: "Don\u2019t worry Zach, he\u2019s just having fun. He doesn\u2019t
+        have Twitter so he has to entertain himself in more ways than just a crossword
+        puzzle."
+    - responseID: He really is. Time to power up I guess!
+      nextNodeId: "That\u2019s the spirit!"
+    nodeType: 0
+  - label: "Don\u2019t worry Zach, he\u2019s just having fun. He doesn\u2019t have
+      Twitter so he has to entertain himself in more ways than just a crossword puzzle."
+    responses:
+    - responseID: "(The man knows more than he\u2019s letting on\u2026)"
+      nextNodeId: <END>
+    nodeType: 1
+  - label: "That\u2019s the spirit!"
+    responses:
+    - responseID: "(The man knows more than he\u2019s letting on\u2026)"
+      nextNodeId: <END>
+    nodeType: 3
+  entryPointId: Hey Zach, how are ya?
   textSource: {fileID: 11400000, guid: 47cd7efcf1767394d84e0a19487b53c6, type: 2}
