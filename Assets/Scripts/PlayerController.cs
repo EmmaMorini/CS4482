@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     float vertical;
     bool isDamageDelay;
     float damageDelay;
+    bool isImmune;
     Animator animator;
     Vector2 lookDir = new Vector2(1, 0);
     Vector2 move;
@@ -65,11 +66,15 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         ChaliceCollectible.OnChaliceCollected += AddHealth;
+
+        ShieldCollectible.OnShieldCollected += AddImmunity;
     }
 
     private void OnDisable()
     {
         ChaliceCollectible.OnChaliceCollected -= AddHealth;
+
+        ShieldCollectible.OnShieldCollected -= AddImmunity;
     }
 
     // Update is called once per frame
@@ -154,7 +159,7 @@ public class PlayerController : MonoBehaviour
 
     public void ChangeHealth(int amt)
     {
-        if (amt < 0)
+        if (amt < 0 && isImmune)
         {
             animator.SetTrigger("Hurt");
             if (isDamageDelay) return;
@@ -252,5 +257,10 @@ public class PlayerController : MonoBehaviour
     {
         currentHealth = maxHealth;
         Debug.Log("Cureent health restored to max:" + currentHealth);
+    }
+
+    void AddImmunity()
+    {
+        isImmune = true;
     }
 }
