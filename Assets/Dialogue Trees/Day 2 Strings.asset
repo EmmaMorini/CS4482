@@ -12,5 +12,107 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adfb985037de4b040a6b450ab9d909cb, type: 3}
   m_Name: Day 2 Strings
   m_EditorClassIdentifier: 
-  languageKeys: []
-  languageMaps: []
+  languageKeys:
+  - Morning Zach!
+  - Morning Ms. Smith. What can I get you today?
+  - Ms. Smith, I had such a weird dream oh my god.
+  - Just a cappuccino please. And any interesting dream stories haha!
+  - Ahhh did the old regular spook you yesterday? I ran into him on his way out.
+  - Oh man is he going around and telling everyone that ridiculous story?
+  - Hmm I suppose so.
+  - 'That dream must have been a coincidence because of the story he told me. '
+  - "What if\u2026 nah he was just messing with me."
+  - 'well, that man does enjoy joking around. But who knows, he may know the history
+    of this shop better than anyone! '
+  - "don\u2019t encourage him Ms. Smith, please"
+  - "Maybe\u2026"
+  - "Ahh don\u2019t dwell on it too much. Anyway, is my coffee ready?"
+  - Ah, yes! Here it is. Have a good day Ms. Smith!
+  languageMaps:
+  - languages: 000000000200000001000000
+    translationList:
+    - Morning Zach!
+    - Buongiorno Zach!
+    - "Ch\xE0o bu\u1ED5i s\xE1ng Zack!"
+  - languages: 000000000100000002000000
+    translationList:
+    - Morning Ms. Smith. What can I get you today?
+    - "Ch\xE0o c\xF4 Smith. T\xF4i c\xF3 th\u1EC3 l\u1EA5y g\xEC cho b\u1EA1n ng\xE0y
+      h\xF4m nay?"
+    - Buongiorno signora Smith. Cosa posso darti oggi?
+  - languages: 000000000100000002000000
+    translationList:
+    - Ms. Smith, I had such a weird dream oh my god.
+    - "C\xF4 Smith, t\xF4i \u0111\xE3 c\xF3 m\u1ED9t gi\u1EA5c m\u01A1 k\u1EF3 l\u1EA1,
+      tr\u1EDDi \u01A1i."
+    - "Signora Smith, ho fatto un sogno cos\xEC strano oh mio dio."
+  - languages: 000000000100000002000000
+    translationList:
+    - Just a cappuccino please. And any interesting dream stories haha!
+    - "L\xE0m \u01A1n cho m\u1ED9t c\u1ED1c cappuccino. V\xE0 nh\u1EEFng c\xE2u chuy\u1EC7n
+      gi\u1EA5c m\u01A1 th\xFA v\u1ECB n\xE0o haha!"
+    - Solo un cappuccino, per favore. E tutte le storie dei sogni interessanti ahah!
+  - languages: 000000000200000001000000
+    translationList:
+    - Ahhh did the old regular spook you yesterday? I ran into him on his way out.
+    - Ahhh il vecchio regolare ti ha spaventato ieri? L'ho incontrato mentre usciva.
+    - "Ahhh ng\xE0y h\xF4m qua c\xF3 ph\u1EA3i ng\u01B0\u1EDDi c\u0169 l\xE0m b\u1EA1n
+      s\u1EE3 kh\xF4ng? T\xF4i t\xECnh c\u1EDD g\u1EB7p anh \u1EA5y tr\xEAn \u0111\u01B0\u1EDDng
+      ra ngo\xE0i."
+  - languages: 000000000100000002000000
+    translationList:
+    - Oh man is he going around and telling everyone that ridiculous story?
+    - "\xD4i tr\u1EDDi, anh \u1EA5y \u0111i kh\u1EAFp n\u01A1i v\xE0 k\u1EC3 cho
+      m\u1ECDi ng\u01B0\u1EDDi nghe c\xE2u chuy\u1EC7n l\u1ED1 b\u1ECBch \u0111\xF3
+      sao?"
+    - Oh amico, sta andando in giro a raccontare a tutti quella storia ridicola?
+  - languages: 000000000200000001000000
+    translationList:
+    - Hmm I suppose so.
+    - "Hmm suppongo di s\xEC."
+    - "T\xF4i cho l\xE0 v\u1EADy."
+  - languages: 000000000100000002000000
+    translationList:
+    - 'That dream must have been a coincidence because of the story he told me. '
+    - "Gi\u1EA5c m\u01A1 \u0111\xF3 h\u1EB3n l\xE0 m\u1ED9t s\u1EF1 t\xECnh c\u1EDD
+      v\xEC c\xE2u chuy\u1EC7n m\xE0 anh \u1EA5y k\u1EC3 cho t\xF4i."
+    - Quel sogno deve essere stato una coincidenza a causa della storia che mi ha
+      raccontato.
+  - languages: 000000000100000002000000
+    translationList:
+    - "What if\u2026 nah he was just messing with me."
+    - "\u0110i\u1EC1u g\xEC s\u1EBD x\u1EA3y ra n\u1EBFu\u2026 kh\xF4ng, anh \u1EA5y
+      ch\u1EC9 \u0111ang nh\u1EAFn tin v\u1EDBi t\xF4i."
+    - E se... no, mi stava solo prendendo in giro.
+  - languages: 000000000100000002000000
+    translationList:
+    - 'Well, that man does enjoy joking around. But who knows, he may know the history
+      of this shop better than anyone! '
+    - "t\u1ED1t, ng\u01B0\u1EDDi \u0111\xE0n \xF4ng \u0111\xF3 th\xEDch \u0111\xF9a
+      gi\u1EE1n xung quanh. Nh\u01B0ng ai bi\u1EBFt \u0111\u01B0\u1EE3c, anh ta c\xF3
+      th\u1EC3 bi\u1EBFt l\u1ECBch s\u1EED c\u1EE7a c\u1EEDa h\xE0ng n\xE0y h\u01A1n
+      b\u1EA5t c\u1EE9 ai!"
+    - "beh, a quell'uomo piace scherzare. Ma chiss\xE0, magari conosce la storia
+      di questo negozio meglio di chiunque altro!"
+  - languages: 000000000100000002000000
+    translationList:
+    - "don\u2019t encourage him Ms. Smith, please"
+    - "\u0111\u1EEBng khuy\u1EBFn kh\xEDch anh \u1EA5y, c\xF4 Smith, l\xE0m \u01A1n"
+    - non incoraggiarlo, signora Smith, per favore
+  - languages: 000000000100000002000000
+    translationList:
+    - "Maybe\u2026"
+    - "C\xF3 l\u1EBD\u2026"
+    - "Forse\u2026"
+  - languages: 000000000100000002000000
+    translationList:
+    - "Ahh don\u2019t dwell on it too much. Anyway, is my coffee ready?"
+    - "Ahh \u0111\u1EEBng t\u1EADp trung v\xE0o n\xF3 qu\xE1 nhi\u1EC1u. D\xF9 sao,
+      c\xE0 ph\xEA c\u1EE7a t\xF4i \u0111\xE3 s\u1EB5n s\xE0ng ch\u01B0a?"
+    - "Ahh non soffermarti troppo su di esso. Comunque, il mio caff\xE8 \xE8 pronto?"
+  - languages: 000000000100000002000000
+    translationList:
+    - Ah, yes! Here it is. Have a good day Ms. Smith!
+    - "\xC0, v\xE2ng! \u0110\xE2y r\u1ED3i. Ch\xFAc b\xE0 Smith m\u1ED9t ng\xE0y
+      t\u1ED1t l\xE0nh!"
+    - "Ah s\xEC! Ecco qui. Buona giornata signora Smith!"

@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -101,3 +102,4 @@ public class I18nTextEditor : EditorWindow
         }
     }
 }
+#endif
